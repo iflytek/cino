@@ -1,4 +1,4 @@
-# 少数民族语言预训练模型 (Chinese-Minority-PLM)
+# 少数民族语言预训练模型（Chinese-Minority-PLM）
 
 <p align="center">
     <br>

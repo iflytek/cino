@@ -13,7 +13,7 @@
 
 在自然语言处理领域中，预训练语言模型（Pre-trained Language Model, PLM）已成为重要的基础技术，在多语言的研究中，预训练模型的使用也愈加普遍。
 
-为了促进中国少数民族语言信息处理的研究与发展，哈工大讯飞联合实验室（HFL）发布少数民族语言预训练模型**CINO** (**C**h**I**nese Mi**NO**rity PLM)。  
+为了促进中国少数民族语言信息处理的研究与发展，**哈工大讯飞联合实验室（HFL）**发布少数民族语言预训练模型**CINO** (**C**h**I**nese Mi**NO**rity PLM)。  
 
 
 其他相关资源：
@@ -53,16 +53,27 @@
     <br>
 </p>
 
+
 ## 模型下载
 
-目前暂时只提供PyTorch版本的CINO-large模型的下载，后续将陆续更新其他规模与版本的模型。
+### 直接下载
+
+目前提供PyTorch版本的CINO-large模型的下载，后续将陆续更新其他规模与版本的模型。
 
 * **`CINO-large`**：24-layer, 1024-hidden, 16-heads, 585M parameters  
 
-| 模型简称 | 模型文件大小 |  讯飞云下载 |
-| :------- | :---------: |  :---------: |
-| **CINO-large** | **2.2GB** |  **[PyTorch模型（密码buhD）](http://pan.iflytek.com:80/link/5D942296A74C97F9FD68E509D1C934EC)** |   
+| 模型简称 | 模型文件大小 | Google下载 |  讯飞云下载 |
+| :------- | :---------: |  :---------: |  ----------- |
+| **CINO-large** | **2.2GB** | **[PyTorch模型](https://drive.google.com/file/d/1X405uMRrCKf53xIZulxX4SsbCg-Mq2C1/view?usp=sharing)** |  **[PyTorch模型（密码buhD）](http://pan.iflytek.com:80/link/5D942296A74C97F9FD68E509D1C934EC)** |
 
+### 通过🤗transformers下载
+
+通过🤗transformers模型库可以下载TensorFlow和PyTorch版本模型。
+| 模型简称 | 模型文件大小 | transformers模型库地址 |
+| :------- | :---------: |  :---------: |
+| **CINO-large** | **2.2GB** | https://huggingface.co/hfl/cino-large |
+
+下载方法：点击任意需要下载的模型 → 选择"Files and versions"选项卡 → 下载对应的模型文件。
 
 ### 模型使用
 
@@ -78,6 +89,23 @@ from transformers import XLMRobertaTokenizer, XLMRobertaModel
 tokenizer = XLMRobertaTokenizer.from_pretrained("PATH_TO_MODEL_DIR")
 model = XLMRobertaModel.from_pretrained("PATH_TO_MODEL_DIR")
 ```
+
+## 快速加载
+### 使用Huggingface-Transformers
+
+依托于[Huggingface-Transformers](https://github.com/huggingface/transformers)，可轻松调用以上模型。
+```
+from transformers import XLMRobertaTokenizer, XLMRobertaModel
+tokenizer = XLMRobertaTokenizer.from_pretrained("MODEL_NAME")
+model = XLMRobertaModel.from_pretrained("MODEL_NAME")
+```
+
+其中`MODEL_NAME`对应列表如下：
+
+| 模型名 | MODEL_NAME |
+| - | - |
+| CINO-large | hfl/cino-large |
+
 ## 少数民族语言分类数据集
 
 ### Wiki-Chinese-Minority（WCM）
@@ -85,9 +113,9 @@ model = XLMRobertaModel.from_pretrained("PATH_TO_MODEL_DIR")
 
 各个语言上取[weighted-F1](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.f1_score.html)为评测指标。计算所有语言的weighted-F1平均作为总体评价指标。
 
-| 数据集名称 |  讯飞云下载 |
-| :------- |  :---------: |
-| **Wiki-Chinese-Minority（WCM）** |   **[（密码UW4s）](http://pan.iflytek.com:80/link/EE3D3364E2E66489395130CDF7930818)** |
+| 数据集名称 | Google下载 |  讯飞云下载 |
+| :------- |  :---------: |  ----------- |
+| **Wiki-Chinese-Minority（WCM）** | [Google Drive](https://drive.google.com/file/d/1VuP_inhluxq7d71xjHSYRRncIwWgjy_L/view?usp=sharing) |   **[（密码UW4s）](http://pan.iflytek.com:80/link/EE3D3364E2E66489395130CDF7930818)** |
 
 数据集分布：
 

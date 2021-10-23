@@ -31,6 +31,7 @@
 |-|-|
 | [简介](#简介) | 介绍少数民族语言预训练模型与相关数据集 |
 | [模型下载](#模型下载) | 模型下载地址与使用说明 |
+| [快速加载](#快速加载) | 介绍了如何使用[🤗Transformers](https://github.com/huggingface/transformers)快速加载模型 |
 | [少数民族语言分类数据集](#少数民族语言分类数据集) | 介绍少数民族语言分类数据集 |
 | [实验结果](#实验结果) | 列举了模型在NLU任务上的效果 |
 | [技术细节](#模型细节与技术报告) | 描述模型的技术细节 |
@@ -69,7 +70,7 @@
 
 ### 直接下载
 
-目前提供PyTorch版本的CINO-large模型的下载，后续将陆续更新其他规模与版本的模型。
+目前提供PyTorch版本的CINO-large模型的下载，后续将陆续更新其他规模与版本的模型。
 
 * **`CINO-large`**：24-layer, 1024-hidden, 16-heads, 585M parameters  
 
@@ -102,9 +103,9 @@ model = XLMRobertaModel.from_pretrained("PATH_TO_MODEL_DIR")
 ```
 
 ## 快速加载
-### 使用Huggingface-Transformers
+### 使用🤗Transformers
 
-依托于[Huggingface-Transformers](https://github.com/huggingface/transformers)，可轻松调用以上模型。
+依托于[🤗Transformers](https://github.com/huggingface/transformers)，可轻松调用以上模型。
 ```
 from transformers import XLMRobertaTokenizer, XLMRobertaModel
 tokenizer = XLMRobertaTokenizer.from_pretrained("MODEL_NAME")

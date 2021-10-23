@@ -47,6 +47,17 @@
 
 通过实验证明，CINO在Wiki-Chinese-Minority（WCM）以及其他少数民族语言数据集：藏语新闻分类 Tibetan News Classification Corpus (TNCC) 、朝鲜语新闻分类 KLUE-TC (YNAT) 上获得了最好的效果。相关结果详见[实验结果](#实验结果)。
 
+该模型涵盖：
+
+- Chinese，中文（zh）
+- Tibetan，藏语（bo）
+- Mongolian (Uighur form)，蒙语（mn）
+- Uyghur，维吾尔语（ug）
+- Kazakh (Arabic form)，哈萨克语（kk）
+- Korean，朝鲜语（ko）
+- Zhuang，壮语
+- Cantonese，粤语（yue）
+
 <p align="center">
     <br>
     <img src="./pics/chinese_minority_model.png" width="1000"/>

@@ -43,9 +43,9 @@
 
 **CINO** (**C**h**I**nese-Mi**NO**rity PLM) 基于多语言预训练模型[XLM-R](https://github.com/facebookresearch/XLM)，在多种国内少数民族语言语料上进行了二次预训练。该模型提供了藏语、蒙语（回鹘体）、维吾尔语、哈萨克语（阿拉伯体）、朝鲜语、壮语、粤语等少数民族语言与方言的理解能力。
 
-为了便于评价包括CINO在内的各个多语言预训练模型性能，我们构建了基于维基百科的少数民族语言分类任务数据集**Wiki-Chinese-Minority**。具体见[少数民族语言分类数据集](#少数民族语言分类数据集)。
+为了便于评价包括CINO在内的各个多语言预训练模型性能，我们构建了基于维基百科的少数民族语言分类任务数据集**Wiki-Chinese-Minority（WCM）**。具体见[少数民族语言分类数据集](#少数民族语言分类数据集)。
 
-通过实验证明，CINO在Wiki-Chinese-Minority以及其他少数民族语言数据集：藏语新闻分类 Tibetan News Classification Corpus (TNCC) 、朝鲜语新闻分类 KLUE-TC (YNAT) 上获得了最好的效果。相关结果详见[实验结果](#实验结果)。
+通过实验证明，CINO在Wiki-Chinese-Minority（WCM）以及其他少数民族语言数据集：藏语新闻分类 Tibetan News Classification Corpus (TNCC) 、朝鲜语新闻分类 KLUE-TC (YNAT) 上获得了最好的效果。相关结果详见[实验结果](#实验结果)。
 
 <p align="center">
     <br>
@@ -74,20 +74,20 @@ sentencepiece.bpe.model  # 词表
 ```
 CINO的结构与XLM-R相同，可直接使用[Transformers](https://huggingface.co/transformers/)中的`XLMRobertaModel`模型进行加载：
 ```
-from transfomers import XLMRobertaTokenizer, XLMRobertaModel
+from transformers import XLMRobertaTokenizer, XLMRobertaModel
 tokenizer = XLMRobertaTokenizer.from_pretrained("PATH_TO_MODEL_DIR")
 model = XLMRobertaModel.from_pretrained("PATH_TO_MODEL_DIR")
 ```
 ## 少数民族语言分类数据集
 
-### Wiki-Chinese-Minority
-我们基于少数民族语言维基百科语料及其分类体系标签，构建了分类任务数据集 **Wiki-Chinese-Minority**。该数据集覆盖了蒙古语、藏语、维吾尔语、粤语、朝鲜语、哈萨克语，中文，包括艺术、地理、历史、自然、自然科学、人物、技术、教育、经济和健康十个类别。
+### Wiki-Chinese-Minority（WCM）
+我们基于少数民族语言维基百科语料及其分类体系标签，构建了分类任务数据集 **Wiki-Chinese-Minority（WCM）**。该数据集覆盖了蒙古语、藏语、维吾尔语、粤语、朝鲜语、哈萨克语，中文，包括艺术、地理、历史、自然、自然科学、人物、技术、教育、经济和健康十个类别。
 
 各个语言上取[weighted-F1](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.f1_score.html)为评测指标。计算所有语言的weighted-F1平均作为总体评价指标。
 
 | 数据集名称 |  讯飞云下载 |
 | :------- |  :---------: |
-| **Wiki-Chinese-Minority** |   **[（密码UW4s）](http://pan.iflytek.com:80/link/EE3D3364E2E66489395130CDF7930818)** |
+| **Wiki-Chinese-Minority（WCM）** |   **[（密码UW4s）](http://pan.iflytek.com:80/link/EE3D3364E2E66489395130CDF7930818)** |
 
 数据集分布：
 
@@ -103,6 +103,7 @@ model = XLMRobertaModel.from_pretrained("PATH_TO_MODEL_DIR")
 | 教育 | 212	| 0	| 0	| 2892	| 5193	| 13973	| 936	| 118	| 130 |
 | 经济 | 0 | 0	| 0	| 5192	| 7343	| 2712	| 922	| 109	| 113 |
 | 健康 | 0	| 110	| 6	| 2721	| 2994	| 2176	| 551	| 73	| 67 |
+| **总计** | 7260 | 494 | 300 | 90305 | 86062 | 31336 | 32000 | 4000 | 3995 |
 
 数据说明：
 
@@ -110,9 +111,8 @@ model = XLMRobertaModel.from_pretrained("PATH_TO_MODEL_DIR")
 * zh：中文的训练集、开发集和测试集
 * minority：所有语言（各少数民族语言与方言）的测试集
 
-**该数据集尚处于alpha阶段，之后的版本可能会有一定改动。**
-
-### **后续还将有其他数据集发布，敬请期待。**
+**该数据集尚处于alpha阶段，之后的版本可能会有一定改动。**  
+**后续还将有其他数据集发布，敬请期待。**
 
 ## 实验结果
 
@@ -139,8 +139,7 @@ model = XLMRobertaModel.from_pretrained("PATH_TO_MODEL_DIR")
 | XLM-R-large<sup>[2]</sup> | 86.3 |
 | **CINO-large** | **87.4** |
 
- > [1] 论文中的结果。
-
+ > [1] 论文中的结果。  
  > [2] 复现结果，与CINO-large使用相同的学习率。
 
 
@@ -163,7 +162,7 @@ model = XLMRobertaModel.from_pretrained("PATH_TO_MODEL_DIR")
 | XLM-R-large | 14.3 | 13.3 |
 | **CINO-large** | **71.3** | **68.6** |
 
-> 原论文中未提供train/dev/split的划分方式。因此，我们重新对数据集按8:1:1做了划分。
+> 注：原论文中未提供train/dev/split的划分方式。因此，我们重新对数据集按8:1:1做了划分。
 
 ### Wiki-Chinese-Minority
 
@@ -173,10 +172,10 @@ model = XLMRobertaModel.from_pretrained("PATH_TO_MODEL_DIR")
 
 实验结果：
 
-| 模型 | 蒙古语 | 藏语 | 维吾尔语 | 粤语 | 朝鲜语 | 哈萨克语 |  中文 | Avg |
+| 模型 | 蒙古语 | 藏语 | 维吾尔语 | 粤语 | 朝鲜语 | 哈萨克语 |  中文 | Average |
 | :------- | :---------: | :---------: | :---------: | :---------: | :---------: | :---------: | :---------: | ----------- |
-| XLM-R-large |  33.2  | 22.9 |77.4|71.4|44.2|   11.6   |88.4|49.9|
-| **CINO-large** | 20.0 | 31.5 |88.8|72.3|46.2|26.1|89.6|53.5|
+| XLM-R-large |  **33.2**  | 22.9 |77.4|71.4|44.2|   11.6   |88.4|49.9|
+| **CINO-large** | 20.0 | **31.5** |**88.8**|**72.3**|**46.2**|**26.1**|**89.6**|**53.5**|
 
 ## 示例代码
 
@@ -185,7 +184,7 @@ model = XLMRobertaModel.from_pretrained("PATH_TO_MODEL_DIR")
 
 ## 模型细节与技术报告
 
-模型细节与技术报告将于近期公布。
+将在近期公布，敬请期待。
 
 ## 关注我们
 欢迎关注哈工大讯飞联合实验室官方微信公众号，了解最新的技术动态。

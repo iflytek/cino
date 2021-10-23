@@ -64,7 +64,7 @@
 
 | 模型简称 | 模型文件大小 | Google下载 |  讯飞云下载 |
 | :------- | :---------: |  :---------: |  ----------- |
-| **CINO-large** | **2.2GB** | **[PyTorch模型](https://drive.google.com/file/d/1X405uMRrCKf53xIZulxX4SsbCg-Mq2C1/view?usp=sharing)** |  **[PyTorch模型（密码buhD）](http://pan.iflytek.com:80/link/5D942296A74C97F9FD68E509D1C934EC)** |
+| **CINO-large** | **2.2GB** | **[PyTorch模型](https://drive.google.com/file/d/1-79q1xLXG2QQ4cdoemiRQVlWrNNRcZl2/view?usp=sharing)** |  **[PyTorch模型（密码buhD）](http://pan.iflytek.com:80/link/5D942296A74C97F9FD68E509D1C934EC)** |
 
 ### 通过🤗transformers下载
 

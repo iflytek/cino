@@ -11,7 +11,7 @@
         <img alt="GitHub" src="https://img.shields.io/github/license/ymcui/Chinese-Minority-PLM.svg?color=blue&style=flat-square">
     </a>
 </p>
-Pre-trained Language Model (PLM) has been an important technique in the recent natural language processing field, including multilingual NLP research. In order to promote the NLP research for Chinese minority languages, the **Joint Laboratory of HIT and iFLYTEK Research (HFL)** has released the first specialized pre-trained language model **CINO** (**C**hinese m**INO**rity PLM).
+Pre-trained Language Model (PLM) has been an important technique in the recent natural language processing field, including multilingual NLP research. In order to promote the NLP research for Chinese minority languages, the Joint Laboratory of HIT and iFLYTEK Research (HFL) has released the first specialized pre-trained language model **CINO** (**C**hinese m**INO**rity PLM).
 
 You may also be interested in,
 
@@ -27,16 +27,13 @@ More resources by HFL: https://github.com/ymcui/HFL-Anthology
 
 Oct 25, 2021 **CINO-large and Wiki-Chinese-Minority（WCM）dataset have been released.**
 
-
-
-
 ## Guide
 | Section | Description |
 |-|-|
 | [Introduction](#Introduction) | Introduction to CINO |
 | [Download](#Download) | Download links and how-to-use |
 | [Quick Load](#Quick-Load) | Learn how to quickly load our models through [🤗Transformers](https://github.com/huggingface/transformers) |
-| [Dataset for Chinese Minority Languages](#Dataset for Chinese Minority Languages) | Introduce Wiki-Chinese-Minority (WCM) and other datasets |
+| [Dataset for Chinese Minority Languages](#Dataset-for-Chinese-Minority-Languages) | Introduce Wiki-Chinese-Minority (WCM) and other datasets |
 | [Results](#Results) | Results on several datasets |
 
 

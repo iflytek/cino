@@ -222,7 +222,7 @@ model = XLMRobertaModel.from_pretrained("MODEL_NAME")
 
 ## 示例代码
 
-将在近期公布，敬请期待。
+请参考[examples](https://github.com/GeekDream-x/Chinese-Minority-PLM/tree/main/examples)。
 
 
 ## 模型细节与技术报告

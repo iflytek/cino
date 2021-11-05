@@ -219,7 +219,7 @@ Results:
 
 ## Demo Code
 
-TBA
+Please refer to [examples](https://github.com/GeekDream-x/Chinese-Minority-PLM/tree/main/examples).
 
 
 ## Technical Details

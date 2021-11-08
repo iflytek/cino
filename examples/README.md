@@ -21,11 +21,11 @@
 - `best_model_save_name`：精调最优模型参数文件名，本例为 `best_cino.pth`。
 
 #### 第一步：模型准备
-在[模型下载](#模型下载)章节中，下载`CINO-large`模型，并解压至`${project-dir}/model/。
+在[模型下载](https://github.com/ymcui/Chinese-Minority-PLM#模型下载)章节中，下载`CINO-large`模型，并解压至`${project-dir}/model/。
 该目录下应包含`pytorch_model.bin`，`sentencepiece.bpe.model`，`config.json`，共计3个文件。
 
 #### 第二步：数据准备
-参照[少数民族语言分类数据集](#少数民族语言分类数据集)章节中的说明，下载Wiki-Chinese-Minority（WCM）数据集中中文数据到`${data-dir}`，并保持原文件名。即`train.txt`、`dev.txt`和`test.txt`。
+参照[少数民族语言分类数据集](https://github.com/ymcui/Chinese-Minority-PLM#%E5%B0%91%E6%95%B0%E6%B0%91%E6%97%8F%E8%AF%AD%E8%A8%80%E5%88%86%E7%B1%BB%E6%95%B0%E6%8D%AE%E9%9B%86)章节中的说明，下载Wiki-Chinese-Minority（WCM）数据集中中文数据到`${data-dir}`，并保持原文件名。即`train.txt`、`dev.txt`和`test.txt`。
 
 #### 第三步：运行训练命令
 ```shell
@@ -62,13 +62,13 @@ python run_finetune.py --params cino-params.json
 - `model_finetune_params`：用于zero-shot的模型参数路径，本例为 `${project-dir}/model/best_cino.pth`。
 
 #### 第一步：模型准备
-在[模型下载](#模型下载)章节中，下载`CINO-large`模型，并解压至`${project-dir}/model/。
+在[模型下载](https://github.com/ymcui/Chinese-Minority-PLM#模型下载)章节中，下载`CINO-large`模型，并解压至`${project-dir}/model/。
 该目录下应包含`pytorch_model.bin`，`sentencepiece.bpe.model`，`config.json`，共计3个文件。
 
 将finetune阶段保存的最优模型参数文件放于`${project-dir}/model/`。
 
 #### 第二步：数据准备
-参照[少数民族语言分类数据集](#少数民族语言分类数据集)章节中的说明，下载Wiki-Chinese-Minority（WCM）数据集中少数民族语言数据到`${data-dir}`，并保持原文件名。即`bo.txt`、`kk.txt`、`ko.txt`、`mn.txt`、`ug.txt`和`yue.txt`。
+参照[少数民族语言分类数据集](https://github.com/ymcui/Chinese-Minority-PLM#%E5%B0%91%E6%95%B0%E6%B0%91%E6%97%8F%E8%AF%AD%E8%A8%80%E5%88%86%E7%B1%BB%E6%95%B0%E6%8D%AE%E9%9B%86)章节中的说明，下载Wiki-Chinese-Minority（WCM）数据集中少数民族语言数据到`${data-dir}`，并保持原文件名。即`bo.txt`、`kk.txt`、`ko.txt`、`mn.txt`、`ug.txt`和`yue.txt`。
 
 #### 第三步：运行训练命令
 ```shell

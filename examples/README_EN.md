@@ -1,4 +1,4 @@
-## Examples
+## Usage
 
 This folder contains examples for finetuning our pretrained model CINO and testing it on zero-shot tasks.
 

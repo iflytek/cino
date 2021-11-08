@@ -219,9 +219,9 @@ Results:
 
 ## Demo Code
 
-See `examples`. It Currently includes
+See `examples`. It currently includes
 
-* [examples/WCM](examples/WCM/README_EN.md)：Fint-tuning and zero-shot evaluation on WCM
+* [examples/WCM](examples/WCM/README_EN.md)：Fine-tuning and zero-shot evaluation on WCM
 
 
 ## Technical Details

@@ -219,7 +219,9 @@ Results:
 
 ## Demo Code
 
-TBA
+See `examples`. It Currently includes
+
+* [examples/WCM](examples/WCM/README_EN.md)：Fint-tuning and zero-shot evaluation on WCM
 
 
 ## Technical Details

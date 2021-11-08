@@ -1,7 +1,6 @@
 ## Usage
 
-[**中文说明**](https://github.com/ymcui/Chinese-Minority-PLM/tree/main/examples) | [**English**](https://github.com/ymcui/Chinese-Minority-PLM/tree/main/examples/README_EN.md)
-
+[**中文说明**](README.md) | [**English**](README_EN.md)
 
 This folder contains examples for finetuning our pretrained model CINO and testing it on zero-shot tasks.
 

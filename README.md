@@ -222,8 +222,9 @@ model = XLMRobertaModel.from_pretrained("MODEL_NAME")
 
 ## 示例代码
 
-将在近期公布，敬请期待。
+参见`examples`目录，目前包括
 
+* [examples/WCM](examples/WCM/README.md)：WCM上的精调与zero-shot测试
 
 ## 模型细节与技术报告
 

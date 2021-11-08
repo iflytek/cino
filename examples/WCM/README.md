@@ -1,6 +1,6 @@
 ## 使用方法
 
-[**中文说明**](https://github.com/ymcui/Chinese-Minority-PLM/tree/main/examples) | [**English**](https://github.com/ymcui/Chinese-Minority-PLM/tree/main/examples/README_EN.md)
+[**中文说明**](README.md) | [**English**](README_EN.md)
 
 用户可以基于已发布的上述预训练模型进行下游任务精调及zero-shot测试。
 

@@ -19,11 +19,11 @@ In this tutorial, we will finetune `CINO-large` with Chinese datasets in WCM.
 - `best_model_save_name`：the filename of the best model, here we set as `best_cino.pth`
 
 #### Step 1：Model preparation
-Download CINO model from [Download](#模型下载) section, and unzip it into `${project-dir}/model/` .
+Download CINO model from [Download](https://github.com/ymcui/Chinese-Minority-PLM/blob/main/README_EN.md#Download) section, and unzip it into `${project-dir}/model/` .
 The folder should contain 3 files, including `pytorch_model.bin`, `sentencepiece.bpe.model`, `config.json`.
 
 #### Step 2：Data Preparation
-Download Chinese data from [Wiki-Chinese-Minority（WCM）](#少数民族语言分类数据集) section, put them into `${data-dir}` and rename them as `train.txt`, `dev.txt` and `txt`.
+Download Chinese data from [Wiki-Chinese-Minority（WCM）](https://github.com/ymcui/Chinese-Minority-PLM/blob/main/README_EN.md#Dataset-for-Chinese-Minority-Languages) section, put them into `${data-dir}` and rename them as `train.txt`, `dev.txt` and `txt`.
 
 #### Step 3：Run command
 ```shell
@@ -60,13 +60,13 @@ In this tutorial, we will test the zero-shot performance of our finetuned CINO m
 - `model_finetune_params`：the path of the best model parameters file saved in finetuning stage, here we set as `${project-dir}/model/best_cino.pth`
 
 #### Step 1：Model preparation
-Download CINO model from [Download](#模型下载) section, and unzip it into `${project-dir}/model/`.
+Download CINO model from [Download](https://github.com/ymcui/Chinese-Minority-PLM/blob/main/README_EN.md#Download) section, and unzip it into `${project-dir}/model/`.
 The folder should contain 3 files, including `pytorch_model.bin`, `sentencepiece.bpe.model`, `config.json`.
 
 Then, put the best model parameters file saved in finetuning stage into `${project-dir}/model/`.
 
 #### Step 2：Data Preparation
-Download minority language data  from [Wiki-Chinese-Minority（WCM）](#少数民族语言分类数据集) section including `bo.txt`, `kk.txt`, `ko.txt`, `mn.txt`, `ug.txt` and `yue.txt` and put them into `${data-dir}`.
+Download minority language data  from [Wiki-Chinese-Minority（WCM）](https://github.com/ymcui/Chinese-Minority-PLM/blob/main/README_EN.md#Dataset-for-Chinese-Minority-Languages) section including `bo.txt`, `kk.txt`, `ko.txt`, `mn.txt`, `ug.txt` and `yue.txt` and put them into `${data-dir}`.
 
 #### Step 3：Run command
 ```shell

@@ -21,7 +21,7 @@
 - `best_model_save_name`：精调最优模型参数文件名，本例为 `best_cino.pth`。
 
 #### 第一步：模型准备
-在[模型下载](https://github.com/ymcui/Chinese-Minority-PLM#模型下载)章节中，下载`CINO-large`模型，并解压至`${project-dir}/model/。
+在[模型下载](https://github.com/ymcui/Chinese-Minority-PLM#模型下载)章节中，下载`CINO-large`模型，并解压至`${project-dir}/model/`。
 该目录下应包含`pytorch_model.bin`，`sentencepiece.bpe.model`，`config.json`，共计3个文件。
 
 #### 第二步：数据准备
@@ -62,7 +62,7 @@ python run_finetune.py --params cino-params.json
 - `model_finetune_params`：用于zero-shot的模型参数路径，本例为 `${project-dir}/model/best_cino.pth`。
 
 #### 第一步：模型准备
-在[模型下载](https://github.com/ymcui/Chinese-Minority-PLM#模型下载)章节中，下载`CINO-large`模型，并解压至`${project-dir}/model/。
+在[模型下载](https://github.com/ymcui/Chinese-Minority-PLM#模型下载)章节中，下载`CINO-large`模型，并解压至`${project-dir}/model/`。
 该目录下应包含`pytorch_model.bin`，`sentencepiece.bpe.model`，`config.json`，共计3个文件。
 
 将finetune阶段保存的最优模型参数文件放于`${project-dir}/model/`。

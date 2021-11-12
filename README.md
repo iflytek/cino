@@ -225,6 +225,8 @@ model = XLMRobertaModel.from_pretrained("MODEL_NAME")
 参见`examples`目录，目前包括
 
 * [examples/WCM](examples/WCM/README.md)：WCM上的精调与zero-shot测试
+* [examples/TNCC](examples/TNCC/README.md)：TNCC上的精调
+* [examples/YNAT](examples/YNAT/README.md)：YNAT上的精调
 
 ## 模型细节与技术报告
 

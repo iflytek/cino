@@ -1,0 +1,14 @@
+{
+    "learning_rate":5e-6,
+    "epoch":2,
+    "gradient_acc":8,
+    "batch_size":4,
+    "max_len":512,
+    "weight_decay":1e-4,
+    "warmup_rate":0.1,
+    "data_dir":"data/",
+    "model_pretrain_dir":"model/", 
+    "model_save_dir":"saved_models/",
+    "best_model_save_name":"best_cino.pth",
+    "class_names":["Politics", "Economy", "Society", "Culture", "World", "IT/Science", "Sport"] 
+}

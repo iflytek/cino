@@ -25,7 +25,7 @@ Download CINO model from [Download](https://github.com/ymcui/Chinese-Minority-PL
 The folder should contain 3 files, including `pytorch_model.bin`, `sentencepiece.bpe.model`, `config.json`.
 
 #### Step 2：Data Preparation
-Download Chinese data from [Wiki-Chinese-Minority（WCM）](https://github.com/ymcui/Chinese-Minority-PLM/blob/main/README_EN.md#Dataset-for-Chinese-Minority-Languages) section, put them into `${data-dir}` and rename them as `train.txt`, `dev.txt` and `txt`.
+Download Chinese data from [Wiki-Chinese-Minority（WCM）](https://github.com/ymcui/Chinese-Minority-PLM/blob/main/README_EN.md#Dataset-for-Chinese-Minority-Languages) section, put them into `${data-dir}` and rename them as `train.txt`, `dev.txt` and `test.txt`.
 
 #### Step 3：Run command
 ```shell

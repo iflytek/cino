@@ -222,6 +222,8 @@ Results:
 See `examples`. It currently includes
 
 * [examples/WCM](examples/WCM/README_EN.md)：Fine-tuning and zero-shot evaluation on WCM
+* [examples/TNCC](examples/TNCC/README_EN.md)：Fine-tuning on TNCC
+* [examples/YNAT](examples/YNAT/README_EN.md)：Fine-tuning on YNAT
 
 
 ## Technical Details

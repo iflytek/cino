@@ -21,10 +21,13 @@
 - 中文BERT-wwm预训练模型：https://github.com/ymcui/Chinese-BERT-wwm
 - 中文XLNet预训练模型：https://github.com/ymcui/Chinese-XLNet
 - 知识蒸馏工具TextBrewer：https://github.com/airaria/TextBrewer
+- 模型裁剪工具TextPruner：https://github.com/airaria/TextPruner
 
 查看更多哈工大讯飞联合实验室（HFL）发布的资源：https://github.com/ymcui/HFL-Anthology
 
 ## 新闻
+
+2021/12/17 **哈工大讯飞联合实验室全新推出[模型裁剪工具包TextPruner](https://github.com/airaria/TextPruner)，欢迎试用。**
 
 2021/10/25 **CINO-large模型、少数民族语言分类任务数据集Wiki-Chinese-Minority（WCM）数据集已开放下载使用。**
 

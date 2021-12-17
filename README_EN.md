@@ -20,11 +20,13 @@ You may also be interested in,
 - Chinese BERT series: https://github.com/ymcui/Chinese-BERT-wwm
 - Chinese XLNet: https://github.com/ymcui/Chinese-XLNet
 - Knowledge Distillation Toolkit - TextBrewer: https://github.com/airaria/TextBrewer
+- Model Pruning Toolkit - TextPruner：https://github.com/airaria/TextPruner
 
 More resources by HFL: https://github.com/ymcui/HFL-Anthology
 
 ## News
 
+Dec 17, 2021 **We have released a model pruning toolkit TextPruner**. Check https://github.com/airaria/TextPruner
 Oct 25, 2021 **CINO-large and Wiki-Chinese-Minority（WCM）dataset have been released.**
 
 ## Guide

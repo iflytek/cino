@@ -129,7 +129,7 @@ def main():
     parser.add_argument("--params", default={}, help="JSON dict of model hyperparameters.")   
     args = parser.parse_args()
 
-    config = CINO_ZS_Configer(load(args.hparams))
+    config = CINO_ZS_Configer(load(args.params))
 
     trainer = CINO_ZeroShoter(config)
     trainer.zeroshot()

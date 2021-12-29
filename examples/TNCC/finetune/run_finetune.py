@@ -179,7 +179,7 @@ def main():
     parser.add_argument("--params", default={}, help="JSON dict of model hyperparameters.")   
     args = parser.parse_args()
 
-    config = CINO_FT_Configer(load(args.hparams))
+    config = CINO_FT_Configer(load(args.params))
 
     trainer = CINO_Trainer(config)
     trainer.run_finetune()

@@ -104,8 +104,11 @@ class CINO_Trainer():
             for idx, (ids, att, y) in enumerate(data_loader):
                 y_pred = model(ids.to(self.device), att.to(self.device))
                 y_pred = torch.argmax(y_pred, dim=1).detach().cpu().numpy().tolist()
-                test_pred.extend(y_pred)
-                test_true.extend(y.squeeze().cpu().numpy().tolist())
+                test_pred.extend(y_pred if type(y_pred) == list else [y_pred])
+
+                y_temp = y.squeeze().cpu().numpy().tolist()
+                test_true.extend(y_temp if type(y_temp) == list else [y_temp])
+
             return test_true, test_pred
 
 

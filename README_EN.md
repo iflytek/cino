@@ -78,9 +78,9 @@ We provide CINO-large of PyTorch version. We will release more models in the fut
 
 * **`CINO-large`**：24-layer, 1024-hidden, 16-heads, 585M parameters  
 
-| Model | Size | Google Drive | iFLYTEK Cloud |
+| Model | Size | Google Drive | Baidu Disk |
 | :------- | :---------: |  :---------: |  ----------- |
-| **CINO-large** | **2.2GB** | **[PyTorch](https://drive.google.com/file/d/1-79q1xLXG2QQ4cdoemiRQVlWrNNRcZl2/view?usp=sharing)** | **[PyTorch (pw: buhD)](http://pan.iflytek.com:80/link/5D942296A74C97F9FD68E509D1C934EC)** |
+| **CINO-large** | **2.2GB** | **[PyTorch](https://drive.google.com/file/d/1-79q1xLXG2QQ4cdoemiRQVlWrNNRcZl2/view?usp=sharing)** | **[PyTorch (pw: wpyh)](https://pan.baidu.com/s/1xOsUbwwY1K6rMysEvGXSLg?pwd=wpyh)** |
 
 ### Download from 🤗transformers
 
@@ -130,9 +130,9 @@ We built a new classification dataset **Wiki-Chinese-Minority (WCM)**. The datas
 
 We use [weighted-F1](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.f1_score.html) for evaluation. 
 
-| Name | Google Drive | iFLYTEK Cloud |
+| Name | Google Drive | Baidu Disk |
 | :------- |  :---------: |  ----------- |
-| **Wiki-Chinese-Minority（WCM）** | [Google Drive](https://drive.google.com/file/d/1VuP_inhluxq7d71xjHSYRRncIwWgjy_L/view?usp=sharing) | [iFLYTEK Cloud (pw: UW4s)](http://pan.iflytek.com:80/link/EE3D3364E2E66489395130CDF7930818) |
+| **Wiki-Chinese-Minority（WCM）** | [Google Drive](https://drive.google.com/file/d/1VuP_inhluxq7d71xjHSYRRncIwWgjy_L/view?usp=sharing) | [iFLYTEK Cloud (pw: y9sw)](https://pan.baidu.com/s/1fZ8ZgPezFxNFdUYchpxfgQ?pwd=y9sw) |
 
 Dataset Statistics:
 

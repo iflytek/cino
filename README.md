@@ -29,7 +29,7 @@
 
 2021/12/17 **哈工大讯飞联合实验室全新推出[模型裁剪工具包TextPruner](https://github.com/airaria/TextPruner)，欢迎试用。**
 
-2021/10/25 **CINO-large模型、少数民族语言分类任务数据集Wiki-Chinese-Minority（WCM）数据集已开放下载使用。**
+2021/10/25 CINO-large模型、少数民族语言分类任务数据集Wiki-Chinese-Minority（WCM）数据集已开放下载使用。
 
 
 
@@ -82,9 +82,9 @@
 
 * **`CINO-large`**：24-layer, 1024-hidden, 16-heads, 585M parameters  
 
-| 模型简称 | 模型文件大小 | Google下载 |  讯飞云下载 |
-| :------- | :---------: |  :---------: |  ----------- |
-| **CINO-large** | **2.2GB** | **[PyTorch模型](https://drive.google.com/file/d/1-79q1xLXG2QQ4cdoemiRQVlWrNNRcZl2/view?usp=sharing)** |  **[PyTorch模型（密码buhD）](http://pan.iflytek.com:80/link/5D942296A74C97F9FD68E509D1C934EC)** |
+| 模型简称 | 模型文件大小 | Google下载 | 百度网盘下载 |
+| :------- | :---------: |  :---------: |  :---------: |
+| **CINO-large** | **2.2GB** | **[PyTorch模型](https://drive.google.com/file/d/1-79q1xLXG2QQ4cdoemiRQVlWrNNRcZl2/view?usp=sharing)** | **[PyTorch模型（密码wpyh）](https://pan.baidu.com/s/1xOsUbwwY1K6rMysEvGXSLg?pwd=wpyh)** |
 
 ### 通过🤗transformers下载
 
@@ -131,9 +131,9 @@ model = XLMRobertaModel.from_pretrained("MODEL_NAME")
 
 各个语言上取[weighted-F1](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.f1_score.html)为评测指标。计算所有语言的weighted-F1平均作为总体评价指标。
 
-| 数据集名称 | Google下载 |  讯飞云下载 |
-| :------- |  :---------: |  ----------- |
-| **Wiki-Chinese-Minority（WCM）** | [Google Drive](https://drive.google.com/file/d/1VuP_inhluxq7d71xjHSYRRncIwWgjy_L/view?usp=sharing) |   **[（密码UW4s）](http://pan.iflytek.com:80/link/EE3D3364E2E66489395130CDF7930818)** |
+| 数据集名称 | Google下载 | 百度网盘下载 |
+| :------- |  :---------: |  :---------: |
+| **Wiki-Chinese-Minority（WCM）** | [Google Drive](https://drive.google.com/file/d/1VuP_inhluxq7d71xjHSYRRncIwWgjy_L/view?usp=sharing) | **[数据集（密码y9sw）](https://pan.baidu.com/s/1fZ8ZgPezFxNFdUYchpxfgQ?pwd=y9sw)** |
 
 数据集分布：
 

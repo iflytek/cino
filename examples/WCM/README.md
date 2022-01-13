@@ -29,7 +29,7 @@
 
 #### 第三步：运行训练命令
 ```shell
-python run_finetune.py --params cino-params.json
+python wcm_finetune.py --params cino-params.json
 ```
 `params`是一个JSON词典，在本例中的`cino-params.json`包含了精调相关参数，例如：
 ```json
@@ -72,7 +72,7 @@ python run_finetune.py --params cino-params.json
 
 #### 第三步：运行训练命令
 ```shell
-python run_zeroshot.py --params cino-params.json
+python wcm_zeroshot.py --params cino-params.json
 ```
 `params`是一个JSON词典，在本例中的`cino-params.json`包含了zero-shot相关参数，例如：
 ```json

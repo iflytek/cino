@@ -29,7 +29,7 @@ Download Chinese data from [Wiki-Chinese-Minority（WCM）](https://github.com/y
 
 #### Step 3：Run command
 ```shell
-python run_finetune.py --params cino-params.json
+python wcm_finetune.py --params cino-params.json
 ```
 `params` should be  a JSON dictionary, in this tutorial, `cino-params.json` contains all parameters  for finetuning, for example：
 ```json
@@ -72,7 +72,7 @@ Download minority language data  from [Wiki-Chinese-Minority（WCM）](https://g
 
 #### Step 3：Run command
 ```shell
-python run_zeroshot.py --params cino-params.json
+python wcm_zeroshot.py --params cino-params.json
 ```
 `params` should be  a JSON dictionary, in this tutorial, `cino-params.json` contains all paramters  for finetuning, for example:
 ```json

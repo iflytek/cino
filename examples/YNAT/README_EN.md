@@ -29,7 +29,7 @@ Download  data from [Korean Text Classification (YNAT)](https://github.com/ymcui
 
 #### Step 3：Run command
 ```shell
-python run_finetune.py --params cino-params.json
+python ynat_finetune.py --params cino-params.json
 ```
 `params` should be  a JSON dictionary, in this tutorial, `cino-params.json` contains all parameters  for finetuning, for example：
 ```json

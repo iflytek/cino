@@ -80,8 +80,8 @@ We provide CINO-large of PyTorch version. We will release more models in the fut
 
 | Model | Size | Google Drive | Baidu Disk |
 | :------- | :---------: |  :---------: |  :---------: |
-| **CINO-large-v2** | **1.6GB** | - | **[PyTorch（pw: 3fjt）](https://pan.baidu.com/s/19wks3DpI2gXxAD8twN12Jg?pwd=3fjt)** |
-| **CINO-base-v2** | **705MB** | - | **[PyTorch（pw: qnvc）](https://pan.baidu.com/s/11qOk7YaGRsJJl3QviNR0IA?pwd=qnvc)** |
+| **CINO-large-v2** | **1.6GB** | **[PyTorch](https://drive.google.com/file/d/13ehEZcAJmW_19IOiKOJX49tfmWclqn6_/view?usp=sharing)** | **[PyTorch（pw: 3fjt）](https://pan.baidu.com/s/19wks3DpI2gXxAD8twN12Jg?pwd=3fjt)** |
+| **CINO-base-v2** | **705MB** | **[PyTorch](https://drive.google.com/file/d/1DxTPFG3DYIF_TyoFQw1-lJ_xuQipSnLd/view?usp=sharing)** | **[PyTorch（pw: qnvc）](https://pan.baidu.com/s/11qOk7YaGRsJJl3QviNR0IA?pwd=qnvc)** |
 | **CINO-large** | **2.2GB** | **[PyTorch](https://drive.google.com/file/d/1-79q1xLXG2QQ4cdoemiRQVlWrNNRcZl2/view?usp=sharing)** | **[PyTorch (pw: wpyh)](https://pan.baidu.com/s/1xOsUbwwY1K6rMysEvGXSLg?pwd=wpyh)** |
 
 ### Download from 🤗transformers

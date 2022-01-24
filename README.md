@@ -79,8 +79,8 @@
 
 | 模型简称 | 模型文件大小 | Google下载 | 百度网盘下载 |
 | :------- | :---------: |  :---------: |  :---------: |
-| **CINO-large-v2** | **1.6GB** | - | **[PyTorch模型（密码3fjt）](https://pan.baidu.com/s/19wks3DpI2gXxAD8twN12Jg?pwd=3fjt)** |
-| **CINO-base-v2** | **705MB** | - | **[PyTorch模型（密码qnvc）](https://pan.baidu.com/s/11qOk7YaGRsJJl3QviNR0IA?pwd=qnvc)** |
+| **CINO-large-v2** | **1.6GB** | **[PyTorch模型](https://drive.google.com/file/d/13ehEZcAJmW_19IOiKOJX49tfmWclqn6_/view?usp=sharing)** | **[PyTorch模型（密码3fjt）](https://pan.baidu.com/s/19wks3DpI2gXxAD8twN12Jg?pwd=3fjt)** |
+| **CINO-base-v2** | **705MB** | **[PyTorch模型](https://drive.google.com/file/d/1DxTPFG3DYIF_TyoFQw1-lJ_xuQipSnLd/view?usp=sharing)** | **[PyTorch模型（密码qnvc）](https://pan.baidu.com/s/11qOk7YaGRsJJl3QviNR0IA?pwd=qnvc)** |
 | **CINO-large** | **2.2GB** | **[PyTorch模型](https://drive.google.com/file/d/1-79q1xLXG2QQ4cdoemiRQVlWrNNRcZl2/view?usp=sharing)** | **[PyTorch模型（密码wpyh）](https://pan.baidu.com/s/1xOsUbwwY1K6rMysEvGXSLg?pwd=wpyh)** |
 
 ### 通过🤗transformers下载

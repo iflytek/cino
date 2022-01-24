@@ -14,14 +14,9 @@
 
 在自然语言处理领域中，预训练语言模型（Pre-trained Language Model, PLM）已成为重要的基础技术，在多语言的研究中，预训练模型的使用也愈加普遍。为了促进中国少数民族语言信息处理的研究与发展，**哈工大讯飞联合实验室（HFL）**发布少数民族语言预训练模型**CINO** (**Ch**inese m**INO**rity PLM)。  
 
-
 其他相关资源：
-- 中文MacBERT预训练模型：https://github.com/ymcui/MacBERT
-- 中文ELECTRA预训练模型：https://github.com/ymcui/Chinese-ELECTRA
-- 中文BERT-wwm预训练模型：https://github.com/ymcui/Chinese-BERT-wwm
-- 中文XLNet预训练模型：https://github.com/ymcui/Chinese-XLNet
-- 知识蒸馏工具TextBrewer：https://github.com/airaria/TextBrewer
-- 模型裁剪工具TextPruner：https://github.com/airaria/TextPruner
+
+[中文MacBERT](https://github.com/ymcui/MacBERT) | [中文ELECTRA](https://github.com/ymcui/Chinese-ELECTRA) | [中文XLNet](https://github.com/ymcui/Chinese-XLNet) | [中文BERT](https://github.com/ymcui/Chinese-BERT-wwm) |  [知识蒸馏工具TextBrewer](https://github.com/airaria/TextBrewer) | [模型裁剪工具TextPruner](https://github.com/airaria/TextPruner)
 
 查看更多哈工大讯飞联合实验室（HFL）发布的资源：https://github.com/ymcui/HFL-Anthology
 
@@ -84,6 +79,8 @@
 
 | 模型简称 | 模型文件大小 | Google下载 | 百度网盘下载 |
 | :------- | :---------: |  :---------: |  :---------: |
+| **CINO-large-v2** | **1.6GB** | - | **[PyTorch模型（密码3fjt）](https://pan.baidu.com/s/19wks3DpI2gXxAD8twN12Jg?pwd=3fjt)** |
+| **CINO-base-v2** | **705MB** | - | **[PyTorch模型（密码qnvc）](https://pan.baidu.com/s/11qOk7YaGRsJJl3QviNR0IA?pwd=qnvc)** |
 | **CINO-large** | **2.2GB** | **[PyTorch模型](https://drive.google.com/file/d/1-79q1xLXG2QQ4cdoemiRQVlWrNNRcZl2/view?usp=sharing)** | **[PyTorch模型（密码wpyh）](https://pan.baidu.com/s/1xOsUbwwY1K6rMysEvGXSLg?pwd=wpyh)** |
 
 ### 通过🤗transformers下载
@@ -91,6 +88,8 @@
 通过🤗transformers模型库可以下载TensorFlow和PyTorch版本模型。
 | 模型简称 | 模型文件大小 | transformers模型库地址 |
 | :------- | :---------: |  :---------: |
+| **CINO-large-v2** | **1.6GB** | https://huggingface.co/hfl/cino-large-v2 |
+| **CINO-base-v2** | **705MB** | https://huggingface.co/hfl/cino-base-v2 |
 | **CINO-large** | **2.2GB** | https://huggingface.co/hfl/cino-large |
 
 下载方法：点击任意需要下载的模型 → 选择"Files and versions"选项卡 → 下载对应的模型文件。
@@ -122,6 +121,8 @@ model = XLMRobertaModel.from_pretrained("MODEL_NAME")
 
 | 模型名 | MODEL_NAME |
 | - | - |
+| CINO-large-v2 | hfl/cino-large-v2 |
+| CINO-base-v2 | hfl/cino-base-v2 |
 | CINO-large | hfl/cino-large |
 
 ## 少数民族语言分类数据集

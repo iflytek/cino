@@ -79,7 +79,9 @@ We provide CINO-large of PyTorch version. We will release more models in the fut
 * **`CINO-large`**：24-layer, 1024-hidden, 16-heads, 585M parameters  
 
 | Model | Size | Google Drive | Baidu Disk |
-| :------- | :---------: |  :---------: |  ----------- |
+| :------- | :---------: |  :---------: |  :---------: |
+| **CINO-large-v2** | **1.6GB** | - | **[PyTorch（pw: 3fjt）](https://pan.baidu.com/s/19wks3DpI2gXxAD8twN12Jg?pwd=3fjt)** |
+| **CINO-base-v2** | **705MB** | - | **[PyTorch（pw: qnvc）](https://pan.baidu.com/s/11qOk7YaGRsJJl3QviNR0IA?pwd=qnvc)** |
 | **CINO-large** | **2.2GB** | **[PyTorch](https://drive.google.com/file/d/1-79q1xLXG2QQ4cdoemiRQVlWrNNRcZl2/view?usp=sharing)** | **[PyTorch (pw: wpyh)](https://pan.baidu.com/s/1xOsUbwwY1K6rMysEvGXSLg?pwd=wpyh)** |
 
 ### Download from 🤗transformers
@@ -87,6 +89,8 @@ We provide CINO-large of PyTorch version. We will release more models in the fut
 You can also download our models from 🤗transformers Model Hub, including PyTorch and Tensorflow2 models.
 | Model | Size | transformers model hub URL |
 | :------- | :---------: |  :---------: |
+| **CINO-large-v2** | **1.6GB** | https://huggingface.co/hfl/cino-large-v2 |
+| **CINO-base-v2** | **705MB** | https://huggingface.co/hfl/cino-base-v2 |
 | **CINO-large** | **2.2GB** | https://huggingface.co/hfl/cino-large |
 
 How-to: click the model link that you wish to download (e.g., https://huggingface.co/hfl/cino-large) → Select "Files and versions" tab  → Download!
@@ -121,6 +125,8 @@ The actual model and its `MODEL_NAME` are listed below.
 
 | Actual Model | MODEL_NAME |
 | - | - |
+| CINO-large-v2 | hfl/cino-large-v2 |
+| CINO-base-v2 | hfl/cino-base-v2 |
 | CINO-large | hfl/cino-large |
 
 ## Dataset for Chinese Minority Languages

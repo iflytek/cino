@@ -76,21 +76,17 @@ CINO supports the following languages:
 
 ### Direct Download
 
-<<<<<<< HEAD
-* v1 model（CINO-large）supports all the languages in XLM-R and the minority languages.
-* v2 models (CINO-base-v2 and CINO-large-v2) have pruned vocabularies and only support Chinese and the minority languages.
-
-Model structues:
+We provide CINO-base and CINO-large of PyTorch version (**preferred version: v2**). We will release more models in the future.
 
 * **`CINO-large-v2`**：24-layer, 1024-hidden, 16-heads, vocabulary size 136K, 442M parameters
 * **`CINO-base-v2`** 12-layer, 768-hidden, 12-heads, vocabulary size 136K, 190M parameters
 * **`CINO-large`**：24-layer, 1024-hidden, 16-heads, vocabulary size 275K, 585M parameters
-=======
-We provide CINO-base and CINO-large of PyTorch version (**preferred version: v2**). We will release more models in the future.
 
-* **`CINO-large`**：24-layer, 1024-hidden, 16-heads, 585M parameters  
-* **`CINO-base`**：12-layer, 768-hidden, 12-heads, 190M parameters  
->>>>>>> 0e71a8c4df3670442daf1ab7bd9ed09eb4882680
+Notice:
+
+* v1 model（CINO-large）supports all the languages in XLM-R and the minority languages.
+* v2 models (CINO-base-v2 and CINO-large-v2) have pruned vocabularies and only support Chinese and the minority languages.
+
 
 | Model | Size | Google Drive | Baidu Disk |
 | :------- | :---------: |  :---------: |  :---------: |

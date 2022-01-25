@@ -1,4 +1,3 @@
-# 少数民族语言预训练模型（Chinese-Minority-PLM）
 [**中文说明**](https://github.com/ymcui/Chinese-Minority-PLM/) | [**English**](https://github.com/ymcui/Chinese-Minority-PLM/blob/main/README_EN.md)
 
 <p align="center">
@@ -14,11 +13,11 @@
 
 在自然语言处理领域中，预训练语言模型（Pre-trained Language Model, PLM）已成为重要的基础技术，在多语言的研究中，预训练模型的使用也愈加普遍。为了促进中国少数民族语言信息处理的研究与发展，**哈工大讯飞联合实验室（HFL）**发布少数民族语言预训练模型**CINO** (**Ch**inese m**INO**rity PLM)。  
 
-其他相关资源：
+其他资源：
 
 [中文MacBERT](https://github.com/ymcui/MacBERT) | [中文ELECTRA](https://github.com/ymcui/Chinese-ELECTRA) | [中文XLNet](https://github.com/ymcui/Chinese-XLNet) | [中文BERT](https://github.com/ymcui/Chinese-BERT-wwm) |  [知识蒸馏工具TextBrewer](https://github.com/airaria/TextBrewer) | [模型裁剪工具TextPruner](https://github.com/airaria/TextPruner)
 
-查看更多哈工大讯飞联合实验室（HFL）发布的资源：https://github.com/ymcui/HFL-Anthology
+查看更多哈工大讯飞联合实验室发布的资源：https://github.com/ymcui/HFL-Anthology
 
 ## 新闻
 
@@ -73,9 +72,10 @@
 
 ### 直接下载
 
-目前提供PyTorch版本的CINO-large模型的下载，后续将陆续更新其他规模与版本的模型。
+目前提供PyTorch版本的CINO-base和CINO-large模型的下载（**推荐使用v2版本**），后续将陆续更新其他规模与版本的模型。
 
 * **`CINO-large`**：24-layer, 1024-hidden, 16-heads, 585M parameters  
+* **`CINO-base`**：12-layer, 768-hidden, 12-heads, 190M parameters  
 
 | 模型简称 | 模型文件大小 | Google下载 | 百度网盘下载 |
 | :------- | :---------: |  :---------: |  :---------: |
@@ -85,14 +85,15 @@
 
 ### 通过🤗transformers下载
 
-通过🤗transformers模型库可以下载TensorFlow和PyTorch版本模型。
+通过🤗transformers模型库可以下载TensorFlow (v2)和PyTorch版本模型。
+
+下载方法：点击任意需要下载的模型 → 选择"Files and versions"选项卡 → 下载对应的模型文件。
+
 | 模型简称 | 模型文件大小 | transformers模型库地址 |
 | :------- | :---------: |  :---------: |
 | **CINO-large-v2** | **1.6GB** | https://huggingface.co/hfl/cino-large-v2 |
 | **CINO-base-v2** | **705MB** | https://huggingface.co/hfl/cino-base-v2 |
 | **CINO-large** | **2.2GB** | https://huggingface.co/hfl/cino-large |
-
-下载方法：点击任意需要下载的模型 → 选择"Files and versions"选项卡 → 下载对应的模型文件。
 
 ### 模型使用
 

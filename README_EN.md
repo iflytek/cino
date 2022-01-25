@@ -1,4 +1,3 @@
-# CINO: Pre-trained Language Model for Chinese Minority
 [**中文说明**](https://github.com/ymcui/Chinese-Minority-PLM/) | [**English**](https://github.com/ymcui/Chinese-Minority-PLM/blob/main/README_EN.md)
 
 <p align="center">
@@ -27,7 +26,7 @@ More resources by HFL: https://github.com/ymcui/HFL-Anthology
 ## News
 
 Dec 17, 2021 **We have released a model pruning toolkit TextPruner**. Check https://github.com/airaria/TextPruner
-Oct 25, 2021 **CINO-large and Wiki-Chinese-Minority（WCM）dataset have been released.**
+Oct 25, 2021 CINO-large and Wiki-Chinese-Minority（WCM）dataset have been released.
 
 ## Guide
 | Section | Description |
@@ -74,9 +73,10 @@ CINO supports the following languages:
 
 ### Direct Download
 
-We provide CINO-large of PyTorch version. We will release more models in the future.
+We provide CINO-base and CINO-large of PyTorch version (**preferred version: v2**). We will release more models in the future.
 
 * **`CINO-large`**：24-layer, 1024-hidden, 16-heads, 585M parameters  
+* **`CINO-base`**：12-layer, 768-hidden, 12-heads, 190M parameters  
 
 | Model | Size | Google Drive | Baidu Disk |
 | :------- | :---------: |  :---------: |  :---------: |

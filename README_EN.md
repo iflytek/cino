@@ -26,7 +26,10 @@ More resources by HFL: https://github.com/ymcui/HFL-Anthology
 
 ## News
 
+Jan 25, 2022 We have released **CINO-base-v2, CINO-large-v2, and WCM-v2**.
+
 Dec 17, 2021 **We have released a model pruning toolkit TextPruner**. Check https://github.com/airaria/TextPruner
+
 Oct 25, 2021 **CINO-large and Wiki-Chinese-Minority（WCM）dataset have been released.**
 
 ## Guide
@@ -74,9 +77,14 @@ CINO supports the following languages:
 
 ### Direct Download
 
-We provide CINO-large of PyTorch version. We will release more models in the future.
+* v1 model（CINO-large）supports all the languages in XLM-R and the minority languages.
+* v2 models (CINO-base-v2 and CINO-large-v2) have pruned vocabularies and only support Chinese and the minority languages.
 
-* **`CINO-large`**：24-layer, 1024-hidden, 16-heads, 585M parameters  
+Model structues:
+
+* **`CINO-large-v2`**：24-layer, 1024-hidden, 16-heads, vocabulary size 136K, 442M parameters
+* **`CINO-base-v2`** 12-layer, 768-hidden, 12-heads, vocabulary size 136K, 190M parameters
+* **`CINO-large`**：24-layer, 1024-hidden, 16-heads, vocabulary size 275K, 585M parameters
 
 | Model | Size | Google Drive | Baidu Disk |
 | :------- | :---------: |  :---------: |  :---------: |
@@ -138,23 +146,26 @@ We use [weighted-F1](https://scikit-learn.org/stable/modules/generated/sklearn.m
 
 | Name | Google Drive | Baidu Disk |
 | :------- |  :---------: |  ----------- |
-| **Wiki-Chinese-Minority（WCM）** | [Google Drive](https://drive.google.com/file/d/1VuP_inhluxq7d71xjHSYRRncIwWgjy_L/view?usp=sharing) | [iFLYTEK Cloud (pw: y9sw)](https://pan.baidu.com/s/1fZ8ZgPezFxNFdUYchpxfgQ?pwd=y9sw) |
+| **Wiki-Chinese-Minority-v2（WCM-v2）** | - | - |
+| **Wiki-Chinese-Minority（WCM）** | [Google Drive](https://drive.google.com/file/d/1VuP_inhluxq7d71xjHSYRRncIwWgjy_L/view?usp=sharing) | [Baidu Disk (pw: y9sw)](https://pan.baidu.com/s/1fZ8ZgPezFxNFdUYchpxfgQ?pwd=y9sw) |
 
-Dataset Statistics:
+WCM-v2 has a more balanced data distribution across categories and languages.
+
+Dataset Statistics of WCM-v2:
 
 | Category | mn | bo | ug | yue | ko | Kk | zh-Train | zh-Dev | zh-Test |
 | :------: | :---------: | :---------: | :---------: | :---------: | :---------: | :---------: | :---------: | :---------: | :---------: |
-| Art |  437  | 129 |3|3877|10962|   802   |2657|335|331|
-| Geography | 145 | 0 |256|30488|17121|347|12854|1644|1589|
-| History | 470 | 125 |0|6434|10491|588|1771|248|227|
-| Nature | 90	| 0	| 7	| 8880	| 5250 |	5050 |	1105 |	110 |	134 |
-| Natural Science | 5366	| 129 |	20	| 3365	| 6654	| 4183 |	2314	| 287	| 317 |
-| People | 428 |	0 |	0 |	23163 |	9057	| 870 |	7706 |	924 |	953 |
-| Technology | 112	| 1	| 8	| 3293 |	10997 |	635 |	1184 |	152 |	134 |
-| Education | 212	| 0	| 0	| 2892	| 5193	| 13973	| 936	| 118	| 130 |
-| Economy | 0 | 0	| 0	| 5192	| 7343	| 2712	| 922	| 109	| 113 |
-| Health | 0	| 110	| 6	| 2721	| 2994	| 2176	| 551	| 73	| 67 |
-| **Total** | 7260 | 494 | 300 | 90305 | 86062 | 31336 | 32000 | 4000 | 3995 |
+| Art |  135  | 141 |3|387|806|   348   |2657|331|335|
+| Geography | 76 | 339 |256|1550|1197|572|12854|1589|1644|
+| History | 66 | 111 |0|499|776|491|1771|227|248|
+| Nature | 7    | 0 | 7 | 606 | 442 | 361 |  1105 | 134 |  110 |
+| Natural Science | 779    | 133 | 20  | 336 | 532 | 880 |    2314    |    317    | 287   |
+| People | 1402 | 111 | 0 | 1230 | 684  | 169 | 7706 | 953 |  924 |
+| Technology | 191  | 163 | 8 | 329 | 808 | 515 |   1184 | 134 |  152 |
+| Education | 6    | 1 | 0 | 289  | 439 | 1392 | 936   | 130 | 118   |
+| Economy | 205 | 0  | 0 | 445 | 575 | 637 | 922   | 113 | 109   |
+| Health | 106  | 111  | 6 | 272  | 299  | 893 | 551   | 67 | 73    |
+| **Total** | 2973 | 1110 | 300 | 5943 | 6558 | 6258 | 32000 | 3995 | 4000 |
 
 Note:
 
@@ -185,6 +196,8 @@ Results:
 | :------- | :-----: |
 | XLM-R-large<sup>[1]</sup> | 87.3 |
 | XLM-R-large<sup>[2]</sup> | 86.3 |
+| **CINO-base-v2** | 85.5 |
+| **CINO-large-v2** | 87.2 |
 | **CINO-large** | **87.4** |
 
  > [1] The results in the original paper.  
@@ -208,7 +221,10 @@ Results:
 | :------- | :---------: | :---------: |
 | TextCNN | 65.1 | 63.4 |
 | XLM-R-large | 14.3 | 13.3 |
-| **CINO-large** | **71.3** | **68.6** |
+| **CINO-base-v2** | 71.0 | 69.3 |
+| **CINO-large-v2** | **72.9** | **71.0** |
+| **CINO-large** | 71.3 | 68.6 |
+
 
 > Note: there is no official train/dev/test split in this dataset. We split the dataset with the ratio of 8:1:1.
 
@@ -218,12 +234,14 @@ We use Chinese training set to train our model and test on other languages (zero
 
 Hyper-params: initial LR 7e-6, batch size 32.
 
-Results:
+Results on WCM-v2:
 
 | Model | MN | BO | UG | YUE | KO | KK | ZH | Average |
 | :------- | :---------: | :---------: | :---------: | :---------: | :---------: | :---------: | :---------: | ----------- |
-| XLM-R-large |  **33.2**  | 22.9 |77.4|71.4|44.2|   11.6   |88.4|49.9|
-| **CINO-large** | 20.0 | **31.5** |**88.8**|**72.3**|**46.2**|**26.1**|**89.6**|**53.5**|
+| XLM-R-base |  41.2  | 25.7 |   84.5   | 66.1 |  43.1  |   23.0   | 88.3 | 53.1      |
+| XLM-R-large |  53.8  | 24.5 |   89.4   | 67.3 |  45.4  |   30.0   | 88.3 | 57.0     |
+| CINO-base-v2   |  62.1  | 52.7 |   87.8   | 68.1 |  45.6  |   38.3   | 89.0 | 63.4     |
+| CINO-large-v2 | 73.1 | 58.9 |   90.1   |66.9|45.1|   42.0   |88.9|**66.4**|
 
 ## Demo Code
 

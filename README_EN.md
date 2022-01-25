@@ -147,8 +147,8 @@ We built a new classification dataset **Wiki-Chinese-Minority (WCM)**. The datas
 We use [weighted-F1](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.f1_score.html) for evaluation. 
 
 | Name | Google Drive | Baidu Disk |
-| :------- |  :---------: |  ----------- |
-| **Wiki-Chinese-Minority-v2（WCM-v2）** | - | - |
+| :------- |  :---------: |  :---------: |
+| **Wiki-Chinese-Minority-v2（WCM-v2）** | [Google Drive](https://drive.google.com/file/d/1wlCs_6YAfygPPVwXPuiUZ_uqs1BgFODX/view?usp=sharing) |[Baidu Disk (pw: sbse)](https://pan.baidu.com/s/1X7Q-K9rfDyEdDp81G2lxOw?pwd=sbse) |
 | **Wiki-Chinese-Minority（WCM）** | [Google Drive](https://drive.google.com/file/d/1VuP_inhluxq7d71xjHSYRRncIwWgjy_L/view?usp=sharing) | [Baidu Disk (pw: y9sw)](https://pan.baidu.com/s/1fZ8ZgPezFxNFdUYchpxfgQ?pwd=y9sw) |
 
 WCM-v2 has a more balanced data distribution across categories and languages.

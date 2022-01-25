@@ -144,8 +144,8 @@ model = XLMRobertaModel.from_pretrained("MODEL_NAME")
 
 | 数据集名称 | Google下载 | 百度网盘下载 |
 | :------- |  :---------: |  :---------: |
-| **Wiki-Chinese-Minority-v2（WCM-v2）** | - |- |
-| **Wiki-Chinese-Minority（WCM）** | [Google Drive](https://drive.google.com/file/d/1VuP_inhluxq7d71xjHSYRRncIwWgjy_L/view?usp=sharing) | **[数据集（密码y9sw）](https://pan.baidu.com/s/1fZ8ZgPezFxNFdUYchpxfgQ?pwd=y9sw)** |
+| **Wiki-Chinese-Minority-v2（WCM-v2）** | [Google Drive](https://drive.google.com/file/d/1wlCs_6YAfygPPVwXPuiUZ_uqs1BgFODX/view?usp=sharing) |[数据集（密码sbse）](https://pan.baidu.com/s/1X7Q-K9rfDyEdDp81G2lxOw?pwd=sbse) |
+| **Wiki-Chinese-Minority（WCM）** | [Google Drive](https://drive.google.com/file/d/1VuP_inhluxq7d71xjHSYRRncIwWgjy_L/view?usp=sharing) | [数据集（密码y9sw）](https://pan.baidu.com/s/1fZ8ZgPezFxNFdUYchpxfgQ?pwd=y9sw) |
 
 **WCM-v2版本调整了各类别与语言的样本数量，分布相对更均衡**
 

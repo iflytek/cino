@@ -1,4 +1,3 @@
-# CINO: Pre-trained Language Model for Chinese Minority
 [**中文说明**](https://github.com/ymcui/Chinese-Minority-PLM/) | [**English**](https://github.com/ymcui/Chinese-Minority-PLM/blob/main/README_EN.md)
 
 <p align="center">
@@ -26,11 +25,11 @@ More resources by HFL: https://github.com/ymcui/HFL-Anthology
 
 ## News
 
-Jan 25, 2022 We have released **CINO-base-v2, CINO-large-v2, and WCM-v2**.
+Jan 25, 2022 **CINO-base-v2, CINO-large-v2, and WCM-v2 have been released**.
 
 Dec 17, 2021 **We have released a model pruning toolkit TextPruner**. Check https://github.com/airaria/TextPruner
 
-Oct 25, 2021 **CINO-large and Wiki-Chinese-Minority（WCM）dataset have been released.**
+Oct 25, 2021 CINO-large and Wiki-Chinese-Minority（WCM）dataset have been released.
 
 ## Guide
 | Section | Description |
@@ -77,6 +76,7 @@ CINO supports the following languages:
 
 ### Direct Download
 
+<<<<<<< HEAD
 * v1 model（CINO-large）supports all the languages in XLM-R and the minority languages.
 * v2 models (CINO-base-v2 and CINO-large-v2) have pruned vocabularies and only support Chinese and the minority languages.
 
@@ -85,6 +85,12 @@ Model structues:
 * **`CINO-large-v2`**：24-layer, 1024-hidden, 16-heads, vocabulary size 136K, 442M parameters
 * **`CINO-base-v2`** 12-layer, 768-hidden, 12-heads, vocabulary size 136K, 190M parameters
 * **`CINO-large`**：24-layer, 1024-hidden, 16-heads, vocabulary size 275K, 585M parameters
+=======
+We provide CINO-base and CINO-large of PyTorch version (**preferred version: v2**). We will release more models in the future.
+
+* **`CINO-large`**：24-layer, 1024-hidden, 16-heads, 585M parameters  
+* **`CINO-base`**：12-layer, 768-hidden, 12-heads, 190M parameters  
+>>>>>>> 0e71a8c4df3670442daf1ab7bd9ed09eb4882680
 
 | Model | Size | Google Drive | Baidu Disk |
 | :------- | :---------: |  :---------: |  :---------: |

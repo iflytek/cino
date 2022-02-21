@@ -21,6 +21,8 @@
 
 ## 新闻
 
+2022/02/21 **更新CINO-small模型**，6层transformer结构，参数量148M。
+
 2022/01/25 **更新CINO-v2模型与WCM-v2数据集**，少数民族语言分类任务效果提升。
 
 2021/12/17 **哈工大讯飞联合实验室全新推出[模型裁剪工具包TextPruner](https://github.com/airaria/TextPruner)，欢迎试用。**
@@ -75,21 +77,23 @@
 ### 直接下载
 
 
-目前提供PyTorch版本的CINO-base和CINO-large模型的下载（**推荐使用v2版本**），后续将陆续更新其他规模与版本的模型。
+目前提供PyTorch版本的CINO-small、CINO-base和CINO-large模型的下载（**推荐使用v2版本**），后续将陆续更新其他规模与版本的模型。
 
 * **`CINO-large-v2`**：24-layer, 1024-hidden, 16-heads, vocabulary size 136K, 442M parameters
 * **`CINO-base-v2`** 12-layer, 768-hidden, 12-heads, vocabulary size 136K, 190M parameters
+* **`CINO-small-v2`** 6-layer, 768-hidden, 12-heads, vocabulary size 136K, 148M parameters
 * **`CINO-large`**：24-layer, 1024-hidden, 16-heads, vocabulary size 275K, 585M parameters
 
 注意：
 - v1模型（CINO-large）支持XLM-R中的所有语言再加上少数民族语言；
-- v2模型（CINO-base-v2和CINO-large-v2）的词表针对预训练数据做了裁剪，仅支持中文与少数民族语言。
+- v2模型（CINO-large-v2，CINO-base-v2和CINO-small-v2）的词表针对预训练数据做了裁剪，仅支持中文与少数民族语言。
 
 
 | 模型简称 | 模型文件大小 | Google下载 | 百度网盘下载 |
 | :------- | :---------: |  :---------: |  :---------: |
 | **CINO-large-v2** | **1.6GB** | **[PyTorch模型](https://drive.google.com/file/d/13ehEZcAJmW_19IOiKOJX49tfmWclqn6_/view?usp=sharing)** | **[PyTorch模型（密码3fjt）](https://pan.baidu.com/s/19wks3DpI2gXxAD8twN12Jg?pwd=3fjt)** |
 | **CINO-base-v2** | **705MB** | **[PyTorch模型](https://drive.google.com/file/d/1DxTPFG3DYIF_TyoFQw1-lJ_xuQipSnLd/view?usp=sharing)** | **[PyTorch模型（密码qnvc）](https://pan.baidu.com/s/11qOk7YaGRsJJl3QviNR0IA?pwd=qnvc)** |
+| **CINO-small-v2** | **564MB** | **[PyTorch模型](https://drive.google.com/file/d/1cEVoehOEdNJdHfJ-lUXGvVVQ8vdxYs__/view?usp=sharing)** | **[PyTorch模型（密码9mc8）](https://pan.baidu.com/s/1tC_doYl6pxvJpfyIDVTCQg?pwd=9mc8)** |
 | **CINO-large** | **2.2GB** | **[PyTorch模型](https://drive.google.com/file/d/1-79q1xLXG2QQ4cdoemiRQVlWrNNRcZl2/view?usp=sharing)** | **[PyTorch模型（密码wpyh）](https://pan.baidu.com/s/1xOsUbwwY1K6rMysEvGXSLg?pwd=wpyh)** |
 
 ### 通过🤗transformers下载
@@ -102,6 +106,7 @@
 | :------- | :---------: |  :---------: |
 | **CINO-large-v2** | **1.6GB** | https://huggingface.co/hfl/cino-large-v2 |
 | **CINO-base-v2** | **705MB** | https://huggingface.co/hfl/cino-base-v2 |
+| **CINO-small-v2** | **564MB** | https://huggingface.co/hfl/cino-small-v2 |
 | **CINO-large** | **2.2GB** | https://huggingface.co/hfl/cino-large |
 
 ### 模型使用
@@ -133,6 +138,7 @@ model = XLMRobertaModel.from_pretrained("MODEL_NAME")
 | - | - |
 | CINO-large-v2 | hfl/cino-large-v2 |
 | CINO-base-v2 | hfl/cino-base-v2 |
+| CINO-small-v2 | hfl/cino-small-v2 |
 | CINO-large | hfl/cino-large |
 
 ## 少数民族语言分类数据集
@@ -197,6 +203,7 @@ WCM-v2版本数据分布：
 | :------- | :-----: |
 | XLM-R-large<sup>[1]</sup> | 87.3 |
 | XLM-R-large<sup>[2]</sup> | 86.3 |
+| **CINO-small-v2** |84.1 |
 | **CINO-base-v2** | 85.5 |
 | **CINO-large-v2** | 87.2 |
 | **CINO-large** | **87.4** |
@@ -222,7 +229,8 @@ WCM-v2版本数据分布：
 | :------- | :---------: | :---------: |
 | TextCNN | 65.1 | 63.4 |
 | XLM-R-large | 14.3 | 13.3 |
-| **CINO-base-v2** | 70.3 | 68.5 |
+| **CINO-small-v2** | 72.1 | 66.7 |
+| **CINO-base-v2** | 70.3 | 68.4 |
 | **CINO-large-v2** | **72.9** | **71.0** |
 | **CINO-large** | 71.3 | 68.6 |
 
@@ -240,6 +248,7 @@ WCM-v2实验结果：
 | :------- | :---------: | :---------: | :---------: | :---------: | :---------: | :---------: | :---------: | ----------- |
 | XLM-R-base |  41.2  | 25.7 |   84.5   | 66.1 |  43.1  |   23.0   | 88.3 | 53.1      |
 | XLM-R-large |  53.8  | 24.5 |   89.4   | 67.3 |  45.4  |   30.0   | 88.3 | 57.0     |
+| CINO-small-v2   | 60.3  | 47.9 |   86.5   | 64.6 |  43.2  |   33.2   | 87.9 | 60.5         |
 | CINO-base-v2   |  62.1  | 52.7 |   87.8   | 68.1 |  45.6  |   38.3   | 89.0 | 63.4     |
 | CINO-large-v2 | 73.1 | 58.9 |   90.1   |66.9|45.1|   42.0   |88.9|**66.4**|
 

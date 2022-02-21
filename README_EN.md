@@ -25,6 +25,8 @@ More resources by HFL: https://github.com/ymcui/HFL-Anthology
 
 ## News
 
+Feb 21, 2022 **CINO-small** (6-layer, 148M parameters) have been released.
+
 Jan 25, 2022 **CINO-base-v2, CINO-large-v2, and WCM-v2 have been released**.
 
 Dec 17, 2021 **We have released a model pruning toolkit TextPruner**. Check https://github.com/airaria/TextPruner
@@ -76,22 +78,24 @@ CINO supports the following languages:
 
 ### Direct Download
 
-We provide CINO-base and CINO-large of PyTorch version (**preferred version: v2**). We will release more models in the future.
+We provide CINO-small, CINO-base and CINO-large of PyTorch version (**preferred version: v2**). We will release more models in the future.
 
 * **`CINO-large-v2`**：24-layer, 1024-hidden, 16-heads, vocabulary size 136K, 442M parameters
 * **`CINO-base-v2`** 12-layer, 768-hidden, 12-heads, vocabulary size 136K, 190M parameters
+* **`CINO-small-v2`** 6-layer, 768-hidden, 12-heads, vocabulary size 136K, 148M parameters
 * **`CINO-large`**：24-layer, 1024-hidden, 16-heads, vocabulary size 275K, 585M parameters
 
 Notice:
 
 * v1 model（CINO-large）supports all the languages in XLM-R and the minority languages.
-* v2 models (CINO-base-v2 and CINO-large-v2) have pruned vocabularies and only support Chinese and the minority languages.
+* v2 models (CINO-large-v2 and CINO-base-v2 and CINO-small-v2) have pruned vocabularies and only support Chinese and the minority languages.
 
 
 | Model | Size | Google Drive | Baidu Disk |
 | :------- | :---------: |  :---------: |  :---------: |
 | **CINO-large-v2** | **1.6GB** | **[PyTorch](https://drive.google.com/file/d/13ehEZcAJmW_19IOiKOJX49tfmWclqn6_/view?usp=sharing)** | **[PyTorch（pw: 3fjt）](https://pan.baidu.com/s/19wks3DpI2gXxAD8twN12Jg?pwd=3fjt)** |
 | **CINO-base-v2** | **705MB** | **[PyTorch](https://drive.google.com/file/d/1DxTPFG3DYIF_TyoFQw1-lJ_xuQipSnLd/view?usp=sharing)** | **[PyTorch（pw: qnvc）](https://pan.baidu.com/s/11qOk7YaGRsJJl3QviNR0IA?pwd=qnvc)** |
+| **CINO-small-v2** | **564MB** | **[PyTorch](https://drive.google.com/file/d/1cEVoehOEdNJdHfJ-lUXGvVVQ8vdxYs__/view?usp=sharing)** | **[PyTorch todo（pw: 9mc8）](https://pan.baidu.com/s/1tC_doYl6pxvJpfyIDVTCQg?pwd=9mc8)** |
 | **CINO-large** | **2.2GB** | **[PyTorch](https://drive.google.com/file/d/1-79q1xLXG2QQ4cdoemiRQVlWrNNRcZl2/view?usp=sharing)** | **[PyTorch (pw: wpyh)](https://pan.baidu.com/s/1xOsUbwwY1K6rMysEvGXSLg?pwd=wpyh)** |
 
 ### Download from 🤗transformers
@@ -101,6 +105,7 @@ You can also download our models from 🤗transformers Model Hub, including PyTo
 | :------- | :---------: |  :---------: |
 | **CINO-large-v2** | **1.6GB** | https://huggingface.co/hfl/cino-large-v2 |
 | **CINO-base-v2** | **705MB** | https://huggingface.co/hfl/cino-base-v2 |
+| **CINO-small-v2** | **564MB** | https://huggingface.co/hfl/cino-small-v2 |
 | **CINO-large** | **2.2GB** | https://huggingface.co/hfl/cino-large |
 
 How-to: click the model link that you wish to download (e.g., https://huggingface.co/hfl/cino-large) → Select "Files and versions" tab  → Download!
@@ -137,6 +142,7 @@ The actual model and its `MODEL_NAME` are listed below.
 | - | - |
 | CINO-large-v2 | hfl/cino-large-v2 |
 | CINO-base-v2 | hfl/cino-base-v2 |
+| CINO-small-v2 | hfl/cino-small-v2 |
 | CINO-large | hfl/cino-large |
 
 ## Dataset for Chinese Minority Languages
@@ -198,6 +204,7 @@ Results:
 | :------- | :-----: |
 | XLM-R-large<sup>[1]</sup> | 87.3 |
 | XLM-R-large<sup>[2]</sup> | 86.3 |
+| **CINO-small-v2** |84.1 |
 | **CINO-base-v2** | 85.5 |
 | **CINO-large-v2** | 87.2 |
 | **CINO-large** | **87.4** |
@@ -223,7 +230,8 @@ Results:
 | :------- | :---------: | :---------: |
 | TextCNN | 65.1 | 63.4 |
 | XLM-R-large | 14.3 | 13.3 |
-| **CINO-base-v2** | 70.3 | 68.5 |
+| **CINO-small-v2** | 72.1 | 66.7 |
+| **CINO-base-v2** | 70.3 | 68.4 |
 | **CINO-large-v2** | **72.9** | **71.0** |
 | **CINO-large** | 71.3 | 68.6 |
 
@@ -242,6 +250,7 @@ Results on WCM-v2:
 | :------- | :---------: | :---------: | :---------: | :---------: | :---------: | :---------: | :---------: | ----------- |
 | XLM-R-base |  41.2  | 25.7 |   84.5   | 66.1 |  43.1  |   23.0   | 88.3 | 53.1      |
 | XLM-R-large |  53.8  | 24.5 |   89.4   | 67.3 |  45.4  |   30.0   | 88.3 | 57.0     |
+| CINO-small-v2   | 60.3  | 47.9 |   86.5   | 64.6 |  43.2  |   33.2   | 87.9 | 60.5         |
 | CINO-base-v2   |  62.1  | 52.7 |   87.8   | 68.1 |  45.6  |   38.3   | 89.0 | 63.4     |
 | CINO-large-v2 | 73.1 | 58.9 |   90.1   |66.9|45.1|   42.0   |88.9|**66.4**|
 

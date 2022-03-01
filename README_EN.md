@@ -41,6 +41,7 @@ Oct 25, 2021 CINO-large and Wiki-Chinese-Minority（WCM）dataset have been rele
 | [Quick Load](#Quick-Load) | Learn how to quickly load our models through [🤗Transformers](https://github.com/huggingface/transformers) |
 | [Dataset for Chinese Minority Languages](#Dataset-for-Chinese-Minority-Languages) | Introduce Wiki-Chinese-Minority (WCM) and other datasets |
 | [Results](#Results) | Results on several datasets |
+| [Citation](#Citation) | Citation and technical report |
 
 
 ## Introduction
@@ -263,9 +264,21 @@ See `examples`. It currently includes
 * [examples/YNAT](examples/YNAT/README_EN.md)：Fine-tuning on YNAT
 
 
-## Technical Details
+## Citation
 
-TBA
+If you find the technical report or resource is useful, please cite our work in your paper.
+
+- [CINO: A Chinese Minority Pre-trained Language Model](https://arxiv.org/abs/2202.13558)
+```
+@misc{yang2022cino,
+      title={CINO: A Chinese Minority Pre-trained Language Model}, 
+      author={Ziqing Yang and Zihang Xu and Yiming Cui and Baoxin Wang and Min Lin and Dayong Wu and Zhigang Chen},
+      year={2022},
+      eprint={2202.13558},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+```
 
 ## Follow Us
 Follow our official WeChat account to keep updated with our latest technologies!

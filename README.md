@@ -40,7 +40,7 @@
 | [快速加载](#快速加载) | 介绍了如何使用[🤗Transformers](https://github.com/huggingface/transformers)快速加载模型 |
 | [少数民族语言分类数据集](#少数民族语言分类数据集) | 介绍少数民族语言分类数据集 |
 | [实验结果](#实验结果) | 列举了模型在NLU任务上的效果 |
-| [技术细节](#模型细节与技术报告) | 描述模型的技术细节 |
+| [引用](#引用) | 技术报告与引用 |
 
 
 ## 简介
@@ -260,9 +260,21 @@ WCM-v2实验结果：
 * [examples/TNCC](examples/TNCC/README.md)：TNCC上的精调
 * [examples/YNAT](examples/YNAT/README.md)：YNAT上的精调
 
-## 模型细节与技术报告
+## 引用
 
-将在近期公布，敬请期待。
+如果本目录中的内容对你的研究工作有所帮助，欢迎引用下述论文。
+
+- [CINO: A Chinese Minority Pre-trained Language Model](https://arxiv.org/abs/2202.13558)
+```
+@misc{yang2022cino,
+      title={CINO: A Chinese Minority Pre-trained Language Model}, 
+      author={Ziqing Yang and Zihang Xu and Yiming Cui and Baoxin Wang and Min Lin and Dayong Wu and Zhigang Chen},
+      year={2022},
+      eprint={2202.13558},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+```
 
 ## 关注我们
 欢迎关注哈工大讯飞联合实验室官方微信公众号，了解最新的技术动态。

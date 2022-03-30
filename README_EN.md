@@ -12,24 +12,20 @@
 </p>
 Pre-trained Language Model (PLM) has been an important technique in the recent natural language processing field, including multilingual NLP research. In order to promote the NLP research for Chinese minority languages, the Joint Laboratory of HIT and iFLYTEK Research (HFL) has released the first specialized pre-trained language model **CINO** (**C**hinese m**INO**rity PLM).
 
-You may also be interested in,
+----
 
-- Chinese MacBERT: https://github.com/ymcui/MacBERT
-- Chinese ELECTRA: https://github.com/ymcui/Chinese-ELECTRA
-- Chinese BERT series: https://github.com/ymcui/Chinese-BERT-wwm
-- Chinese XLNet: https://github.com/ymcui/Chinese-XLNet
-- Knowledge Distillation Toolkit - TextBrewer: https://github.com/airaria/TextBrewer
-- Model Pruning Toolkit - TextPruner：https://github.com/airaria/TextPruner
+[Chinese MacBERT](https://github.com/ymcui/MacBERT) | [Chinese ELECTRA](https://github.com/ymcui/Chinese-ELECTRA) | [Chinese XLNet](https://github.com/ymcui/Chinese-XLNet) | [Chinese BERT](https://github.com/ymcui/Chinese-BERT-wwm) | [TextBrewer](https://github.com/airaria/TextBrewer) | [TextPruner](https://github.com/airaria/TextPruner)
 
 More resources by HFL: https://github.com/ymcui/HFL-Anthology
 
 ## News
+**Mar 30, 2022 We release a new pre-trained model called PERT, check https://github.com/ymcui/PERT**
 
-Feb 21, 2022 **CINO-small** (6-layer, 148M parameters) have been released.
+Feb 21, 2022 CINO-small (6-layer, 148M parameters) have been released.
 
-Jan 25, 2022 **CINO-base-v2, CINO-large-v2, and WCM-v2 have been released**.
+Jan 25, 2022 CINO-base-v2, CINO-large-v2, and WCM-v2 have been released.
 
-Dec 17, 2021 **We have released a model pruning toolkit TextPruner**. Check https://github.com/airaria/TextPruner
+Dec 17, 2021 We have released a model pruning toolkit TextPruner. Check https://github.com/airaria/TextPruner
 
 Oct 25, 2021 CINO-large and Wiki-Chinese-Minority（WCM）dataset have been released.
 

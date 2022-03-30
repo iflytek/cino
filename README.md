@@ -13,22 +13,22 @@
 
 在自然语言处理领域中，预训练语言模型（Pre-trained Language Model, PLM）已成为重要的基础技术，在多语言的研究中，预训练模型的使用也愈加普遍。为了促进中国少数民族语言信息处理的研究与发展，**哈工大讯飞联合实验室（HFL）**发布少数民族语言预训练模型**CINO** (**Ch**inese m**INO**rity PLM)。  
 
-其他资源：
+----
 
 [中文MacBERT](https://github.com/ymcui/MacBERT) | [中文ELECTRA](https://github.com/ymcui/Chinese-ELECTRA) | [中文XLNet](https://github.com/ymcui/Chinese-XLNet) | [中文BERT](https://github.com/ymcui/Chinese-BERT-wwm) |  [知识蒸馏工具TextBrewer](https://github.com/airaria/TextBrewer) | [模型裁剪工具TextPruner](https://github.com/airaria/TextPruner)
 
 查看更多哈工大讯飞联合实验室发布的资源：https://github.com/ymcui/HFL-Anthology
 
 ## 新闻
+**2022/3/30 我们开源了一种新预训练模型PERT。查看：https://github.com/ymcui/PERT**
 
-2022/02/21 **更新CINO-small模型**，6层transformer结构，参数量148M。
+2022/02/21 更新CINO-small模型，6层transformer结构，参数量148M。
 
-2022/01/25 **更新CINO-v2模型与WCM-v2数据集**，少数民族语言分类任务效果提升。
+2022/01/25 更新CINO-v2模型与WCM-v2数据集，少数民族语言分类任务效果提升。
 
-2021/12/17 **哈工大讯飞联合实验室全新推出[模型裁剪工具包TextPruner](https://github.com/airaria/TextPruner)，欢迎试用。**
+2021/12/17 哈工大讯飞联合实验室全新推出[模型裁剪工具包TextPruner](https://github.com/airaria/TextPruner)，欢迎试用。
 
 2021/10/25 CINO-large模型、少数民族语言分类任务数据集Wiki-Chinese-Minority（WCM）数据集已开放下载使用。
-
 
 
 ## 内容导引

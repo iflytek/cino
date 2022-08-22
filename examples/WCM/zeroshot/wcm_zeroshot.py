@@ -92,7 +92,7 @@ class CINO_ZeroShoter():
                 test_pred.extend(y_pred if isinstance(y_pred, list) else [y_pred])
 
                 y_true = y_true.squeeze().cpu().numpy().tolist()
-                test_true.extend([y_true] if isinstance(y_true, list) else y_true)
+                test_true.extend(y_true if isinstance(y_true, list) else [y_true])
         return test_true, test_pred
 
 

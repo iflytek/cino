@@ -19,7 +19,9 @@ Pre-trained Language Model (PLM) has been an important technique in the recent n
 More resources by HFL: https://github.com/ymcui/HFL-Anthology
 
 ## News
-**Mar 30, 2022 We release a new pre-trained model called PERT, check https://github.com/ymcui/PERT**
+**Aug 23, 2022 CINO has been accepted as a long paper at [COLING 2022](http://coling2022.org). We will update the final paper and release the corresponding resources after the camera-ready deadline.**
+
+Mar 30, 2022 We release a new pre-trained model called PERT, check https://github.com/ymcui/PERT
 
 Feb 21, 2022 CINO-small (6-layer, 148M parameters) have been released.
 

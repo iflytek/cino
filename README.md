@@ -22,7 +22,7 @@
 ## 新闻
 **2022/8/23 CINO被国际重要会议[COLING 2022](http://coling2022.org)录用为长文。camera-ready结束后，我们将更新论文最终版并发布相应资源。**
 
-2022/3/30 我们开源了一种新预训练模型PERT。查看：https://github.com/ymcui/PERT**
+2022/3/30 我们开源了一种新预训练模型PERT。查看：https://github.com/ymcui/PERT
 
 2022/02/21 更新CINO-small模型，6层transformer结构，参数量148M。
 

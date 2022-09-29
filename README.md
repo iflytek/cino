@@ -236,7 +236,7 @@ WCM-v2版本数据分布：
 | **CINO-large-v2** | **72.9** | **71.0** |
 | **CINO-large** | 71.3 | 68.6 |
 
-> 注：原论文中未提供train/dev/test的划分方式。因此，我们重新对数据集按8:1:1做了划分。
+> 注：原论文中未提供train/dev/test的划分方式。因此，我们重新对数据集按8:1:1做了划分。划分后的数据集请参考 [data/TNCC](data/TNCC/))。
 
 ### Wiki-Chinese-Minority
 

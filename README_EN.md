@@ -235,7 +235,8 @@ Results:
 | **CINO-large** | 71.3 | 68.6 |
 
 
-> Note: there is no official train/dev/test split in this dataset. We split the dataset with the ratio of 8:1:1.
+> Note: there is no official train/dev/test split in this dataset. We split the dataset with the ratio of 8:1:1. Our splits are available at [data/TNCC](data/TNCC/)).
+> 
 
 ### Wiki-Chinese-Minority
 

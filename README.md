@@ -1,4 +1,4 @@
-[**中文说明**](https://github.com/ymcui/Chinese-Minority-PLM/) | [**English**](https://github.com/ymcui/Chinese-Minority-PLM/blob/main/README_EN.md)
+[**中文说明**](README.md) | [**English**](README_EN.md)
 
 <p align="center">
     <br>
@@ -236,7 +236,7 @@ WCM-v2版本数据分布：
 | **CINO-large-v2** | **72.9** | **71.0** |
 | **CINO-large** | 71.3 | 68.6 |
 
-> 注：原论文中未提供train/dev/test的划分方式。因此，我们重新对数据集按8:1:1做了划分。划分后的数据集请参考 [data/TNCC](data/TNCC/))。
+> 注：原论文中未提供train/dev/test的划分方式。因此，我们重新对数据集按8:1:1做了划分。划分后的数据集请参考 [data/TNCC](data/TNCC/)， 其中"with_space_separated"内数据保留了原作者公开时的空格分隔符，本文实验使用的是去掉原始空格分隔后的"without_space_separated"版本。
 
 ### Wiki-Chinese-Minority
 

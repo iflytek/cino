@@ -1,4 +1,4 @@
-[**中文说明**](https://github.com/ymcui/Chinese-Minority-PLM/) | [**English**](https://github.com/ymcui/Chinese-Minority-PLM/blob/main/README_EN.md)
+[**中文说明**](README.md) | [**English**](README_EN.md)
 
 <p align="center">
     <br>

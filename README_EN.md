@@ -21,8 +21,6 @@ More resources by HFL: https://github.com/ymcui/HFL-Anthology
 ## News
 **Aug 23, 2022 CINO has been accepted as a long paper at [COLING 2022](http://coling2022.org). We will update the final paper and release the corresponding resources after the camera-ready deadline.**
 
-Mar 30, 2022 We release a new pre-trained model called PERT, check https://github.com/ymcui/PERT
-
 Feb 21, 2022 CINO-small (6-layer, 148M parameters) have been released.
 
 Jan 25, 2022 CINO-base-v2, CINO-large-v2, and WCM-v2 have been released.
@@ -267,15 +265,24 @@ See `examples`. It currently includes
 
 If you find the technical report or resource is useful, please cite our work in your paper.
 
-- [CINO: A Chinese Minority Pre-trained Language Model](https://arxiv.org/abs/2202.13558)
+- [CINO: A Chinese Minority Pre-trained Language Model](https://aclanthology.org/2022.coling-1.346/)
 ```
-@misc{yang2022cino,
-      title={CINO: A Chinese Minority Pre-trained Language Model}, 
-      author={Ziqing Yang and Zihang Xu and Yiming Cui and Baoxin Wang and Min Lin and Dayong Wu and Zhigang Chen},
-      year={2022},
-      eprint={2202.13558},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
+@inproceedings{yang-etal-2022-cino,
+    title = "{CINO}: A {C}hinese Minority Pre-trained Language Model",
+    author = "Yang, Ziqing  and
+      Xu, Zihang  and
+      Cui, Yiming  and
+      Wang, Baoxin  and
+      Lin, Min  and
+      Wu, Dayong  and
+      Chen, Zhigang",
+    booktitle = "Proceedings of the 29th International Conference on Computational Linguistics",
+    month = oct,
+    year = "2022",
+    address = "Gyeongju, Republic of Korea",
+    publisher = "International Committee on Computational Linguistics",
+    url = "https://aclanthology.org/2022.coling-1.346",
+    pages = "3937--3949"
 }
 ```
 

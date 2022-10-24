@@ -1,4 +1,4 @@
-[**中文说明**](README.md) | [**English**](README_EN.md)
+[**中文说明**](https://github.com/ymcui/Chinese-Minority-PLM/) | [**English**](https://github.com/ymcui/Chinese-Minority-PLM/blob/main/README_EN.md)
 
 <p align="center">
     <br>
@@ -21,8 +21,6 @@
 
 ## 新闻
 **2022/8/23 CINO被国际重要会议[COLING 2022](http://coling2022.org)录用为长文。camera-ready结束后，我们将更新论文最终版并发布相应资源。**
-
-2022/3/30 我们开源了一种新预训练模型PERT。查看：https://github.com/ymcui/PERT
 
 2022/02/21 更新CINO-small模型，6层transformer结构，参数量148M。
 
@@ -105,7 +103,7 @@
 下载方法：点击任意需要下载的模型 → 选择"Files and versions"选项卡 → 下载对应的模型文件。
 
 | 模型简称 | 模型文件大小 | transformers模型库地址 |
-| :------- | :---------: |  :---------: |
+| :------- | :---------: |  :---------- |
 | **CINO-large-v2** | **1.6GB** | https://huggingface.co/hfl/cino-large-v2 |
 | **CINO-base-v2** | **705MB** | https://huggingface.co/hfl/cino-base-v2 |
 | **CINO-small-v2** | **564MB** | https://huggingface.co/hfl/cino-small-v2 |
@@ -236,7 +234,7 @@ WCM-v2版本数据分布：
 | **CINO-large-v2** | **72.9** | **71.0** |
 | **CINO-large** | 71.3 | 68.6 |
 
-> 注：原论文中未提供train/dev/test的划分方式。因此，我们重新对数据集按8:1:1做了划分。划分后的数据集请参考 [data/TNCC](data/TNCC/)， 其中"with_space_separated"内数据保留了原作者公开时的空格分隔符，本文实验使用的是去掉原始空格分隔后的"without_space_separated"版本。
+> 注：原论文中未提供train/dev/test的划分方式。因此，我们重新对数据集按8:1:1做了划分。
 
 ### Wiki-Chinese-Minority
 
@@ -266,15 +264,24 @@ WCM-v2实验结果：
 
 如果本目录中的内容对你的研究工作有所帮助，欢迎引用下述论文。
 
-- [CINO: A Chinese Minority Pre-trained Language Model](https://arxiv.org/abs/2202.13558)
+- [CINO: A Chinese Minority Pre-trained Language Model](https://aclanthology.org/2022.coling-1.346/)
 ```
-@misc{yang2022cino,
-      title={CINO: A Chinese Minority Pre-trained Language Model}, 
-      author={Ziqing Yang and Zihang Xu and Yiming Cui and Baoxin Wang and Min Lin and Dayong Wu and Zhigang Chen},
-      year={2022},
-      eprint={2202.13558},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
+@inproceedings{yang-etal-2022-cino,
+    title = "{CINO}: A {C}hinese Minority Pre-trained Language Model",
+    author = "Yang, Ziqing  and
+      Xu, Zihang  and
+      Cui, Yiming  and
+      Wang, Baoxin  and
+      Lin, Min  and
+      Wu, Dayong  and
+      Chen, Zhigang",
+    booktitle = "Proceedings of the 29th International Conference on Computational Linguistics",
+    month = oct,
+    year = "2022",
+    address = "Gyeongju, Republic of Korea",
+    publisher = "International Committee on Computational Linguistics",
+    url = "https://aclanthology.org/2022.coling-1.346",
+    pages = "3937--3949"
 }
 ```
 

@@ -76,7 +76,7 @@ class CINO_Trainer():
                                                          truncation=True)
                 input_ids.append(encode_dict['input_ids'])
                 attention_masks.append(encode_dict['attention_mask'])
-                labels.append(int(label))
+                labels.append(int(label)-1)
         return torch.tensor(input_ids), torch.tensor(attention_masks), torch.tensor(labels)
     
     def data_loader(self, input_ids, attention_masks, labels):

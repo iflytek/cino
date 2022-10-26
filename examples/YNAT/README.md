@@ -25,7 +25,7 @@
 该目录下应包含`pytorch_model.bin`，`sentencepiece.bpe.model`，`config.json`，共计3个文件。
 
 #### 第二步：数据准备
-参照[朝鲜语文本分类（YNAT）](https://github.com/ymcui/Chinese-Minority-PLM/#%E6%9C%9D%E9%B2%9C%E8%AF%AD%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BBynat)章节中的说明，下载数据集到`${data-dir}`，并将训练集和开发集分别重命名为`train.txt`和`dev.txt`。
+参照[朝鲜语文本分类（YNAT）](https://github.com/ymcui/Chinese-Minority-PLM/#%E6%9C%9D%E9%B2%9C%E8%AF%AD%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BBynat)章节中的说明，下载数据集到`${data-dir}`，自行提取标题和分类、处理成 [dataset example](./../../data/YNAT/example.txt) 格式，并将训练集和开发集分别重命名为`train.txt`和`dev.txt`。关于类别索引，请参考第三步中的`${class_names}`.
 
 #### 第三步：运行训练命令
 ```shell

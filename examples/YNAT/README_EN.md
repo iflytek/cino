@@ -25,7 +25,7 @@ Download CINO model from [Download](https://github.com/ymcui/Chinese-Minority-PL
 The folder should contain 3 files, including `pytorch_model.bin`, `sentencepiece.bpe.model`, `config.json`.
 
 #### Step 2：Data Preparation
-Download  data from [Korean Text Classification (YNAT)](https://github.com/ymcui/Chinese-Minority-PLM/blob/main/README_EN.md#korean-text-classification-ynat) section, put them into `${data-dir}` and rename the train set and dev set as `train.txt` and `dev.txt` respectively.
+Download  data from [Korean Text Classification (YNAT)](https://github.com/ymcui/Chinese-Minority-PLM/blob/main/README_EN.md#korean-text-classification-ynat) section, put them into `${data-dir}`, extract the titles and corresponding categories and store them in the format of [dataset example](./../../data/YNAT/example.txt), and then rename the train set and dev set as `train.txt` and `dev.txt` respectively. For the mapping between names of classes and the indices, please refer to `${class_names}` in the next step.
 
 #### Step 3：Run command
 ```shell

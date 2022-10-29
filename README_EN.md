@@ -14,11 +14,13 @@ Pre-trained Language Model (PLM) has been an important technique in the recent n
 
 ----
 
-[Chinese MacBERT](https://github.com/ymcui/MacBERT) | [Chinese ELECTRA](https://github.com/ymcui/Chinese-ELECTRA) | [Chinese XLNet](https://github.com/ymcui/Chinese-XLNet) | [Chinese BERT](https://github.com/ymcui/Chinese-BERT-wwm) | [TextBrewer](https://github.com/airaria/TextBrewer) | [TextPruner](https://github.com/airaria/TextPruner)
+[Chinese LERT](https://github.com/ymcui/LERT) | [Chinese/English PERT](https://github.com/ymcui/PERT) [Chinese MacBERT](https://github.com/ymcui/MacBERT) | [Chinese ELECTRA](https://github.com/ymcui/Chinese-ELECTRA) | [Chinese XLNet](https://github.com/ymcui/Chinese-XLNet) | [Chinese BERT](https://github.com/ymcui/Chinese-BERT-wwm) | [TextBrewer](https://github.com/airaria/TextBrewer) | [TextPruner](https://github.com/airaria/TextPruner)
 
 More resources by HFL: https://github.com/ymcui/HFL-Anthology
 
 ## News
+<b>Oct 29, 2022 We release a new pre-trained model called LERT, check https://github.com/ymcui/LERT/</b>
+
 **Aug 23, 2022 CINO has been accepted as a long paper at [COLING 2022](http://coling2022.org). We will update the final paper and release the corresponding resources after the camera-ready deadline.**
 
 Feb 21, 2022 CINO-small (6-layer, 148M parameters) have been released.

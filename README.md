@@ -15,11 +15,13 @@
 
 ----
 
-[中文MacBERT](https://github.com/ymcui/MacBERT) | [中文ELECTRA](https://github.com/ymcui/Chinese-ELECTRA) | [中文XLNet](https://github.com/ymcui/Chinese-XLNet) | [中文BERT](https://github.com/ymcui/Chinese-BERT-wwm) |  [知识蒸馏工具TextBrewer](https://github.com/airaria/TextBrewer) | [模型裁剪工具TextPruner](https://github.com/airaria/TextPruner)
+[中文LERT](https://github.com/ymcui/LERT) | [中英文PERT](https://github.com/ymcui/PERT) | [中文MacBERT](https://github.com/ymcui/MacBERT) | [中文ELECTRA](https://github.com/ymcui/Chinese-ELECTRA) | [中文XLNet](https://github.com/ymcui/Chinese-XLNet) | [中文BERT](https://github.com/ymcui/Chinese-BERT-wwm) | [知识蒸馏工具TextBrewer](https://github.com/airaria/TextBrewer) | [模型裁剪工具TextPruner](https://github.com/airaria/TextPruner)
 
 查看更多哈工大讯飞联合实验室发布的资源：https://github.com/ymcui/HFL-Anthology
 
 ## 新闻
+**2022/10/29 我们提出了一种融合语言学信息的预训练模型LERT。查看：https://github.com/ymcui/LERT**
+
 **2022/8/23 CINO被国际重要会议[COLING 2022](http://coling2022.org)录用为长文。camera-ready结束后，我们将更新论文最终版并发布相应资源。**
 
 2022/02/21 更新CINO-small模型，6层transformer结构，参数量148M。

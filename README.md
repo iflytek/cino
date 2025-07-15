@@ -91,25 +91,12 @@
 - v2模型（CINO-large-v2，CINO-base-v2和CINO-small-v2）的词表针对预训练数据做了裁剪，仅支持中文与少数民族语言。
 
 
-| 模型简称 | 模型文件大小 | Google下载 | 百度网盘下载 |
+| 模型简称 | 模型文件大小 | 🤗HF下载 | 百度网盘下载 |
 | :------- | :---------: |  :---------: |  :---------: |
-| **CINO-large-v2** | **1.6GB** | **[PyTorch模型](https://drive.google.com/file/d/13ehEZcAJmW_19IOiKOJX49tfmWclqn6_/view?usp=sharing)** | **[PyTorch模型（密码3fjt）](https://pan.baidu.com/s/19wks3DpI2gXxAD8twN12Jg?pwd=3fjt)** |
-| **CINO-base-v2** | **705MB** | **[PyTorch模型](https://drive.google.com/file/d/1DxTPFG3DYIF_TyoFQw1-lJ_xuQipSnLd/view?usp=sharing)** | **[PyTorch模型（密码qnvc）](https://pan.baidu.com/s/11qOk7YaGRsJJl3QviNR0IA?pwd=qnvc)** |
-| **CINO-small-v2** | **564MB** | **[PyTorch模型](https://drive.google.com/file/d/1cEVoehOEdNJdHfJ-lUXGvVVQ8vdxYs__/view?usp=sharing)** | **[PyTorch模型（密码9mc8）](https://pan.baidu.com/s/1tC_doYl6pxvJpfyIDVTCQg?pwd=9mc8)** |
-| **CINO-large** | **2.2GB** | **[PyTorch模型](https://drive.google.com/file/d/1-79q1xLXG2QQ4cdoemiRQVlWrNNRcZl2/view?usp=sharing)** | **[PyTorch模型（密码wpyh）](https://pan.baidu.com/s/1xOsUbwwY1K6rMysEvGXSLg?pwd=wpyh)** |
-
-### 通过🤗transformers下载
-
-通过🤗transformers模型库可以下载TensorFlow (v2)和PyTorch版本模型。
-
-下载方法：点击任意需要下载的模型 → 选择"Files and versions"选项卡 → 下载对应的模型文件。
-
-| 模型简称 | 模型文件大小 | transformers模型库地址 |
-| :------- | :---------: |  :---------- |
-| **CINO-large-v2** | **1.6GB** | https://huggingface.co/hfl/cino-large-v2 |
-| **CINO-base-v2** | **705MB** | https://huggingface.co/hfl/cino-base-v2 |
-| **CINO-small-v2** | **564MB** | https://huggingface.co/hfl/cino-small-v2 |
-| **CINO-large** | **2.2GB** | https://huggingface.co/hfl/cino-large |
+| **CINO-large-v2** | **1.6GB** | **[PyTorch模型](https://huggingface.co/hfl/cino-large-v2)** | **[PyTorch模型（密码3fjt）](https://pan.baidu.com/s/19wks3DpI2gXxAD8twN12Jg?pwd=3fjt)** |
+| **CINO-base-v2** | **705MB** | **[PyTorch模型](https://huggingface.co/hfl/cino-base-v2)** | **[PyTorch模型（密码qnvc）](https://pan.baidu.com/s/11qOk7YaGRsJJl3QviNR0IA?pwd=qnvc)** |
+| **CINO-small-v2** | **564MB** | **[PyTorch模型](https://huggingface.co/hfl/cino-small-v2)** | **[PyTorch模型（密码9mc8）](https://pan.baidu.com/s/1tC_doYl6pxvJpfyIDVTCQg?pwd=9mc8)** |
+| **CINO-large** | **2.2GB** | **[PyTorch模型](https://huggingface.co/hfl/cino-large)** | **[PyTorch模型（密码wpyh）](https://pan.baidu.com/s/1xOsUbwwY1K6rMysEvGXSLg?pwd=wpyh)** |
 
 ### 模型使用
 
@@ -150,14 +137,11 @@ model = XLMRobertaModel.from_pretrained("MODEL_NAME")
 
 各个语言上取[weighted-F1](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.f1_score.html)为评测指标。计算所有语言的weighted-F1平均作为总体评价指标。
 
-| 数据集名称 | Google下载 | 百度网盘下载 |
-| :------- |  :---------: |  :---------: |
-| **Wiki-Chinese-Minority-v2（WCM-v2）** | [Google Drive](https://drive.google.com/file/d/1wlCs_6YAfygPPVwXPuiUZ_uqs1BgFODX/view?usp=sharing) |无 |
-| **Wiki-Chinese-Minority（WCM）** | [Google Drive](https://drive.google.com/file/d/1VuP_inhluxq7d71xjHSYRRncIwWgjy_L/view?usp=sharing) | 无 |
+| 数据集名称 | 🤗HF下载 |
+| :------- |  :---------- |
+| **Wiki-Chinese-Minority-v2（WCM-v2）** | https://huggingface.co/datasets/hfl/wcm-v2 |
+| **Wiki-Chinese-Minority（WCM）** | https://huggingface.co/datasets/hfl/wcm |
 
-```
-注：语料数据无法通过百度网盘分享，请通过Google Drive下载。
-```
 
 WCM-v2版本调整了各类别与语言的样本数量，分布相对更均衡。WCM-v2版本数据分布：
 

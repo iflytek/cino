@@ -90,24 +90,12 @@ Notice:
 * v2 models (CINO-large-v2 and CINO-base-v2 and CINO-small-v2) have pruned vocabularies and only support Chinese and the minority languages.
 
 
-| Model | Size | Google Drive | Baidu Disk |
+| Model | Size | 🤗HF | Baidu Disk |
 | :------- | :---------: |  :---------: |  :---------: |
-| **CINO-large-v2** | **1.6GB** | **[PyTorch](https://drive.google.com/file/d/13ehEZcAJmW_19IOiKOJX49tfmWclqn6_/view?usp=sharing)** | **[PyTorch（pw: 3fjt）](https://pan.baidu.com/s/19wks3DpI2gXxAD8twN12Jg?pwd=3fjt)** |
-| **CINO-base-v2** | **705MB** | **[PyTorch](https://drive.google.com/file/d/1DxTPFG3DYIF_TyoFQw1-lJ_xuQipSnLd/view?usp=sharing)** | **[PyTorch（pw: qnvc）](https://pan.baidu.com/s/11qOk7YaGRsJJl3QviNR0IA?pwd=qnvc)** |
-| **CINO-small-v2** | **564MB** | **[PyTorch](https://drive.google.com/file/d/1cEVoehOEdNJdHfJ-lUXGvVVQ8vdxYs__/view?usp=sharing)** | **[PyTorch todo（pw: 9mc8）](https://pan.baidu.com/s/1tC_doYl6pxvJpfyIDVTCQg?pwd=9mc8)** |
-| **CINO-large** | **2.2GB** | **[PyTorch](https://drive.google.com/file/d/1-79q1xLXG2QQ4cdoemiRQVlWrNNRcZl2/view?usp=sharing)** | **[PyTorch (pw: wpyh)](https://pan.baidu.com/s/1xOsUbwwY1K6rMysEvGXSLg?pwd=wpyh)** |
-
-### Download from 🤗transformers
-
-You can also download our models from 🤗transformers Model Hub, including PyTorch and Tensorflow2 models.
-| Model | Size | transformers model hub URL |
-| :------- | :---------: |  :---------: |
-| **CINO-large-v2** | **1.6GB** | https://huggingface.co/hfl/cino-large-v2 |
-| **CINO-base-v2** | **705MB** | https://huggingface.co/hfl/cino-base-v2 |
-| **CINO-small-v2** | **564MB** | https://huggingface.co/hfl/cino-small-v2 |
-| **CINO-large** | **2.2GB** | https://huggingface.co/hfl/cino-large |
-
-How-to: click the model link that you wish to download (e.g., https://huggingface.co/hfl/cino-large) → Select "Files and versions" tab  → Download!
+| **CINO-large-v2** | **1.6GB** | **[PyTorch](https://huggingface.co/hfl/cino-large-v2)** | **[PyTorch（pw: 3fjt）](https://pan.baidu.com/s/19wks3DpI2gXxAD8twN12Jg?pwd=3fjt)** |
+| **CINO-base-v2** | **705MB** | **[PyTorch](https://huggingface.co/hfl/cino-base-v2)** | **[PyTorch（pw: qnvc）](https://pan.baidu.com/s/11qOk7YaGRsJJl3QviNR0IA?pwd=qnvc)** |
+| **CINO-small-v2** | **564MB** | **[PyTorch](https://huggingface.co/hfl/cino-small-v2)** | **[PyTorch todo（pw: 9mc8）](https://pan.baidu.com/s/1tC_doYl6pxvJpfyIDVTCQg?pwd=9mc8)** |
+| **CINO-large** | **2.2GB** | **[PyTorch](https://huggingface.co/hfl/cino-large)** | **[PyTorch (pw: wpyh)](https://pan.baidu.com/s/1xOsUbwwY1K6rMysEvGXSLg?pwd=wpyh)** |
 
 ### How-To-Use
 
@@ -151,10 +139,10 @@ We built a new classification dataset **Wiki-Chinese-Minority (WCM)**. The datas
 
 We use [weighted-F1](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.f1_score.html) for evaluation. 
 
-| Name | Google Drive | Baidu Disk |
-| :------- |  :---------: |  :---------: |
-| **Wiki-Chinese-Minority-v2（WCM-v2）** | [Google Drive](https://drive.google.com/file/d/1wlCs_6YAfygPPVwXPuiUZ_uqs1BgFODX/view?usp=sharing) |- |
-| **Wiki-Chinese-Minority（WCM）** | [Google Drive](https://drive.google.com/file/d/1VuP_inhluxq7d71xjHSYRRncIwWgjy_L/view?usp=sharing) | - |
+| Name | 🤗HF |
+| :------- |  :---------- |
+| **Wiki-Chinese-Minority-v2（WCM-v2）** | https://huggingface.co/datasets/hfl/wcm-v2 |
+| **Wiki-Chinese-Minority（WCM）** | https://huggingface.co/datasets/hfl/wcm |
 
 WCM-v2 has a more balanced data distribution across categories and languages.
 
